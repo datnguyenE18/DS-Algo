@@ -1,0 +1,9 @@
+vector<int> prefixSums(vector<int> a){
+    vector <int> result;
+    int temp = a[0];
+    result.push_back(temp);
+    for(int i = 1; i < a.size(); i++ ){
+        temp += a[i];
+        result.push_back(temp);
+    } return result;
+}

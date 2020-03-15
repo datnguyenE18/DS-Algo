@@ -1,0 +1,17 @@
+Cho một mảng số nguyên
+Kiểm tra xem mảng đó có là dãy tăng hay dãy giảm hay không?
+
+Ví dụ
+	Với sequence = [1, 4, 5, 7, 9], thì kết quả isMonotonous(sequence) = true
+	Với sequence = [0], thì kết quả isMonotonous(sequence) = true;
+	Với sequence = [3, 3], thì kết quả isMonotonous(sequence) = false.
+     2 phần tử bằng nhau không tạo thành dãy tăng hay dãy giảm
+
+Đầu vào/Đầu ra
+	[Thời gian chạy] 0.5 giây
+	[Đầu vào] array.integer sequence
+		Điều kiện:
+			1 ≤ sequence.length ≤ 10,
+			-250 ≤ sequence[i] ≤ 250.
+	[Đầu ra] boolean
+		true nếu sequence là dãy tăng hoặc dãy giảm, false trong trường hợp ngược lại.
