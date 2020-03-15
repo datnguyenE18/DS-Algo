@@ -1,0 +1,15 @@
+Cách đưa một mảng cho trước về mảng "độc nhất" 
+
++) Độ phức tạp: O(nlogn)
+
++) Miêu tả thuật toán:
+	-Sử dụng thuật toán sắp xếp (quick sort, merge sort) để sắp xếp lại mảng A cho trước. 
+	-Nhận thấy sau khi sắp xếp thì các phần tử có giá trị bằng nhau sẽ nằm liên tiếp nhau trên dãy. Vậy khi xây dựng mảng "độc nhất" ta chỉ cần lấy phần tử nằm đầu tiên trong đoạn liên tiếp các phần tử bằng nhau.
+
++) Ví dụ minh họa thuật toán: 
+	-Với A=[1,2,7,3,7,2,7] thì sau khi sắp xếp lại dãy A=[1,2,2,3,7,7,7]. Lần lượt xét các giá trị: 
+giá trị 1: (nằm từ vị trí 0 -> đến vị trí 0) Lấy phần tử đầu tiên của đoạn là A[0]=1 bỏ vào mảng kết quả. 
+giá trị 2: (nằm từ vị trí 1 -> đến vị trí 2) Lấy phần tử đầu tiên của đoạn là A[1]=2 bỏ vào mảng kết quả
+giá trị 3: (nằm từ vị trí 3 -> đến vị trí 3) Lấy phần tử đầu tiên của đoạn là A[3]=3 bỏ vào mảng kết quả 
+giá trị 7: (nằm từ vị trí 4 -> đến vị trí 6) Lấy phần tử đầu tiên của đoạn là A[4]=7 bỏ vào mảng kết quả
+	=> Vậy mảng "độc nhất" của mảng A là [1,2,3,7]
