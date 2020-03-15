@@ -1,0 +1,10 @@
+Cho xâu kí tự. Hãy đếm số lượng kí tự khác nhau trong xâu đó
+
+Ví dụ: Với s = "cabca", thì kết quả differentSymbolsNaive(s) = 3. Có 3 kí tự khác nhau là a, b và c.
+
+Đầu vào/Đầu ra:
+	[Thời gian chạy] 0.5 seconds
+	[Đầu vào] string s
+		Xâu kí tự chứa các chữ cái in thường.
+		Guaranteed constraints: 3 ≤ s.length ≤ 1000.
+	[Đầu ra] integer

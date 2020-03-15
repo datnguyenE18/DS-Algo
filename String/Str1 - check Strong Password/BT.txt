@@ -1,0 +1,9 @@
+Một trang web định nghĩa 1 mật khẩu tối thiểu 6 phần tử được gọi là mạnh (strong) nếu đảm bảo các yếu tố sau:
+
+Có độ dài >= 8
+Chứa ít nhất 1 chữ số (1234567890)
+Chứa ít nhất kí tự chữ cái in thường (abc...z)
+Chứa ít nhất 1 kí tự chữ cái in hoa (ABC...Z)
+Chứa ít nhất 1 kí tự đặc biệt: !@#$%^&*()-+
+
+Cho một xâu kí tự thể hiện password, hãy kiểm tra xem độ mạnh của password.

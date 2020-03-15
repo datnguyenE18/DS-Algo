@@ -1,0 +1,14 @@
+Xóa các khoảng trắng thừa (kí tự cách) trong xâu kí tự cho trước, sao cho giữa các từ chỉ cách nhau bởi 1 khoảng trống. Cũng không có khoảng trống ở đầu và cuối của xâu. Sau đó viết Hoa mỗi chữ cái đầu mỗi từ, các chữ cái khác viết thường.
+
+Ví dụ
+	Với input = "  nGuyen conG Linh ", kết quả formatString(input) = "Nguyen Cong Linh".
+
+Đầu vào/Đầu ra:
+	+) [Thời gian chạy] 0.5 seconds
+
+	+) [Đầu vào] string input
+	+) xâu kí tự chứa kí tự chữ số và chữ cái in hoa hoặc in thường,
+		Điều kiện: 4 ≤ input.length ≤ 20.
+
+[Đầu ra] string
+	+) Xâu kí tự sau khi đã định dạng lại

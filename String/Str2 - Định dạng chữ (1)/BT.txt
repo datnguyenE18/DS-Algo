@@ -1,0 +1,21 @@
+Cho một xâu kí tự s
+
+Vì một lí do gì đó, người ta quên chèn các khoảng trắng giữa các từ mà thay bằng việc viết hoa các kí tự đầu mỗi từ
+
+Hãy viết chương trình sửa lại xâu kí tự đó theo yêu cầu sau: 
+	Tách các từ, và thêm 1 kí tự cách (space) giữa hai từ liên tiếp
+	Chuyển đổi các kí tự in hoa thành kí tự in thường
+
+Ví dụ
+	Với s = "CodesignalIsAwesome", kết quả amendTheSentence(s) = "codesignal is awesome"
+	Với s = "Hello", kết quả amendTheSentence(s) = "hello".
+
+Đầu vào/Đầu ra:
+	[Thời gian chạy] 0.5 giây
+
+	[input] string s
+		Một xâu chứa kí tự chữ cái in hoa và in thường.
+		Điều kiện: 3 ≤ s.length ≤ 100.
+
+	[output] string
+		Câu đã thay đổi.
