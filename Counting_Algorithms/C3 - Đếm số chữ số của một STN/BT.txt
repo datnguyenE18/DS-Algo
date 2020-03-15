@@ -1,0 +1,14 @@
+Đề bài
+Viết chương trình để đọc số nguyên n từ bàn phím và đếm số các chữ số của nó rồi in số chữ số của số đó ra màn hình.
+
+Ví dụ:
+Với n = 99821, đầu ra là 5.
+Vì số 99821 có 5 chữ số.
+Với n = 889991033, đầu ra là 9.
+Vì số 889991033 có 9 chữ số.
+Đầu vào: số nguyên được nhập từ bàn phím.
+Đầu ra: số chữ số của số đã cho hiển thị trên màn hình.
+Thời gian chạy: 0.2s
+
+*******************************************************************************************************************
+Ý tưởng: chia dần cho 10, lấy phần phần nguyên của thương cho đến khi = 0 thì dừng và đếm số lần chia cho 10.

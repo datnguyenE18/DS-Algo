@@ -1,0 +1,19 @@
+Cho hai số L, R. Nhiệm vụ của bạn là hãy đếm tất cả các số có đúng ba ước số trong khoảng [L, R].
+Ví dụ L =1, R =10, ta có kết quả là 2 vì chỉ có số 4 và 9 là có đúng 3 ước số.
+
+Input
+	+) Dòng đầu tiên đưa vào số lượng test T.
+	+) Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là cặp số L, R.
+	+) T, N thỏa mãn rang buộc 1≤T≤100; 1≤L, R ≤10^12 .
+
+Output
+	+) Đưa ra kết quả mỗi test theo từng dòng.
+
+Example:
+Input			 	Output
+2 
+1 10				2
+1 1000000000000			78498
+
+**********************************************************************************************************
+Ý tưởng: SNT chỉ có 2 ước là 1 và chính nó. Vì vậy sô mà chỉ có 3 ước sẽ là 1 , 1 SNT và chính nó. Vì vậy ta bình phương SNT lên ta sẽ được số cần tìm. Sau đó xét khoảng và chọn số thỏa mãn nằm trong khoảng

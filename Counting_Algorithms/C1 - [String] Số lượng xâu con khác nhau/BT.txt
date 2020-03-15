@@ -1,0 +1,15 @@
+Cho một xâu kí tự, tìm số lượng xâu con khác nhau của xâu đó (không tính xâu rỗng)
+
+Ví dụ
+	Với inputString = "abac", thì kết quả differentSubstringsTrie(inputString) = 9. 
+	9 xâu con khác nhau của xâu đầu vào là: "a", "b", "c", "ab", "ac", "ba", "aba", "bac", "abac"
+
+Đầu vào/Đầu ra:
+	[Thời gian chạy] 0.5 giây
+	[Đầu vào] string inputString
+		Xâu kí tự chỉ chứa kí tự chữ cái in thường
+		Điều kiện: 3 ≤ inputString.length ≤ 15.
+	[Đầu ra] integer
+
+*********************************************************************************************************************
+* Ý tưởng: Lưu các xâu con có độ dài i (với i từ 1 đến length(s)) vào một mảng, sau đó sắp xếp mảng tăng dần rồi thực hiện đếm số lượng các xâu con khác nhau ta được số lượng xâu con có độ dài i.
