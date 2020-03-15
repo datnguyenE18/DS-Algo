@@ -1,0 +1,18 @@
+Thuật toán sắp xếp nào là nhanh nhất?
+
++) Theo thống kê "Tốc độ các giải thuật sắp xếp theo đầu vào", có thể thấy với mỗi kiểu dữ liệu khác nhau thì lại có 1 kiểu sắp xếp chiếm ưu thế riêng, ví dụ với dữ liệu Nearly Sorted thì Insertion Sort là nhanh nhất nhưng khi với những kiểu dữ liệu phức tạp hơn thì Insertion Sort lại không phải là nhanh nhất.
+
++) => "Không có 1 bất kỳ thuật toán sắp xếp nào cụ thể cả, nó còn phụ thuộc vào nhiều yếu tố" Và "phụ thuộc vào nhiều yếu tố" cũng là lý do mà có rất nhiều loại thuật toán sắp xếp khác nhau ra đời. Chúng ta nhìn vào 1 vài ví dụ cụ thể dưới đây để thấy những yếu tố nào sẽ ảnh hưởng việc lựa chọn thuật toán
+
+Quick Sort sẽ là tốt nhất nếu ...
+Không lo lắng về các case đầu vào kể cả trường hợp xấu nhất (trật tự nói chung là ngẫu nhiên)
+Không quan tâm đến dung lượng bộ nhớ, bộ nhớ là hoàn toàn lý tưởng và phù hợp ở đây
+Nếu dữ liệu đã được sắp xếp sẵn, thì nên chọn Insertion Sort hoặc Shell Sort sẽ tốt hơn.
+
+Nếu chúng ta thực sự phải loại bỏ case xấu nhất, có thể sử dụng Heap (hoặc ít nhất là Quick3) với độ phức tạp NlogN
+
+Tim Sort sẽ có độ phức tạp thấp hơn Quick Sort ở cả Best Case lẫn Worse Case, Tim Sort là sự kết hợp của Merge Sort và Insertion Sort. Python sử dụng thuật toán sắp xếp này là mặc định của họ
+
+Trong trường hợp, dữ liệu rất ít phần tử (10-20 phần tử), lựa chọn Selection Sort sẽ nhanh hơn Quick Sort
+
+Tóm lại 1 lần nữa , về lý thuyết thì Quick Sort thật sự là thuật toán sắp xếp nhanh nhất trong phần lớn các trường hợp. Tuy nhiên, trên thực tế, việc lựa chọn thuật toán sắp xếp dựa vào nhiều yếu tố như dữ liệu đầu vào số lượng như thế nào, có sắp xếp sẵn hay không, dung lượng bộ nhớ ra sao, tốc độ xử lý CPU...
