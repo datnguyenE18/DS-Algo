@@ -1,0 +1,56 @@
+Sudoku là trò chơi điền số vào ô trống. Mục tiêu là lấp đầy bảng 9x9 bằng các số sao cho mỗi cột, mỗi hàng và mỗi bảng con 3x3 đều chứa tất cả các số từ 1 đến 9 duy nhất một lần.
+
+Hãy tạo ra 1 thuật toán để kiểm tra xem bảng Sudoku cho sẵn có hợp lệ theo các quy tắc được mô tả ở trên không. Lưu ý rằng bảng Sudoku không nhất thiết có thể giải được.
+
+Ví dụ
+	Với grid = [['.', '.', '.', '1', '4', '.', '.', '2', '.'],
+	['.', '.', '6', '.', '.', '.', '.', '.', '.'],
+	['.', '.', '.', '.', '.', '.', '.', '.', '.'],
+	['.', '.', '1', '.', '.', '.', '.', '.', '.'],
+	['.', '6', '7', '.', '.', '.', '.', '.', '9'],
+	['.', '.', '.', '.', '.', '.', '8', '1', '.'],
+	['.', '3', '.', '.', '.', '.', '.', '.', '6'],
+	['.', '.', '.', '.', '.', '7', '.', '.', '.'],
+	['.', '.', '.', '5', '.', '.', '.', '7', '.']]
+		=> thì output sẽ là sudoku2(grid) = true;
+
+	Với grid = [['.', '.', '.', '.', '2', '.', '.', '9', '.'],
+	['.', '.', '.', '.', '6', '.', '.', '.', '.'],
+	['7', '1', '.', '.', '7', '5', '.', '.', '.'],
+	['.', '7', '.', '.', '.', '.', '.', '.', '.'],
+	['.', '.', '.', '.', '8', '3', '.', '.', '.'],
+	['.', '.', '8', '.', '.', '7', '.', '6', '.'],
+	['.', '.', '.', '.', '.', '2', '.', '.', '.'],
+	['.', '1', '.', '2', '.', '.', '.', '.', '.'],
+	['.', '2', '.', '.', '3', '.', '.', '.', '.']] 
+		=> thì output sẽ là sudoku2(grid) = false.
+
+Bảng Sudoku trên là không đúng bởi vì có 2 số 1 ở cột thứ 2. Mỗi cột, mỗi hàng và mỗi bảng con 3x3 chỉ có thể chứa số từ 1 đến 9 duy nhất 1 lần.
+
+Input/Output
+
+[Giới hạn thời gian] 0.5s(cpp)
+[input] array.array.char grid
+	Một array 9x9 gồm các ký tự, trong đó mỗi kí tự có thể là chữ số từ '1' đến '9'hoặc dấu chấm '.'.
+
+[output] boolean
+	Trả về true nếu bảng Sudoku hợp lệ, nếu không thì False.
+
+***********************************************************************************************************************
+*Lý thuyết: 
+Cho 1 ma trận 2 chiều n * m. Ta muốn đánh số các ô từ 1 đến n * m
+Ta có thể hiểu ma trận như n hàng, mỗi hàng gồm m ô
+Với tọa độ được đánh dấu là [0 .. n - 1, 0 .. m - 1] thì ô (i, j) sẽ có chỉ số là i * m + j + 1 (có i hàng nằm trên, cũng như j ô ở trước trên hàng i)
+Tương tự, với tọa độ được đánh dấu là [1 .. n, 1 .. m] thì ô (i, j) sẽ có chỉ số là (i - 1) * m + j
+Nếu coi bảng con kích cỡ u * v là 1 nhóm, vậy làm sao xác định ô (x, y) thuộc nhóm có chỉ số bao nhiêu (giả sử các nhóm được đánh số từ 1) ? 
+Cũng tương tự như cách ta đánh chỉ số các ô ở ý trên. Sẽ có ⌈m/v⌉ nhóm trên 1 dòng, và ⌈n/u⌉ nhóm trên 1 cột (với ⌈x⌉ là số nguyên nhỏ nhất không nhỏ hơn x)
+Với tọa độ là [0 .. n - 1, 0 .. m - 1], ô (x, y) sẽ nằm trong nhóm x/u * ⌈m/v⌉ + y/v + 1
+Với tọa độ là [1 .. n, 1 .. m], mình xin phép để lại cho bạn đọc tự làm
+
+Code minh họa 
+int FindBox(int x, int y, int u, int v, int n, int m) {
+	// o dang xet la (x, y), bang da cho co kich co n * m, chia thanh cac bang con u * v
+	// toa do cac o trong bang la [0 .. n - 1, 0 .. m - 1]
+	// phan nguyen lam tron len cua phan so a/b la (a + b - 1)/b
+	return x/u * ((m + v - 1)/v) + y/v + 1; 
+}
