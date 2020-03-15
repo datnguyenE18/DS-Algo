@@ -1,0 +1,15 @@
+Nam có phải trả tiền mua đồ cho một cửa hàng nhưng lại muốn số lượng tiền trong túi của mình là nhiều nhất. Các tờ tiền có giá trị là 500k, 200k, 100k, 50k, 20k, 10k, 5k, 2k, 1k. Hãy giúp Nam tính toán xem số tờ tiền mình phải trả ít nhất là bao nhiêu nhé!!!
+
+Input
+	1 dòng duy nhất ghi số nguyên dương a là giá tiền (0 < a < 10000).
+Output
+	In ra số tờ tiền nhỏ nhất.
+
+Example
+INPUT	OUTPUT
+520	2
+370	4
+
+*Giải thích: 520 thì các mệnh giá cần trả là 1 tờ 500k và 1 tờ 20k, 
+ 370 thì các mệnh giá cần trả là 1 tờ 200k , 1 tờ 100k ,  1 tờ 50k và 1 tờ 20k
+

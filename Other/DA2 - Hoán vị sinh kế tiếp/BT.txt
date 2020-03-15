@@ -1,0 +1,36 @@
+Viết chương trình liệt kê các hoán vị của {1,2,...,n} theo thứ tự từ điển 
+Như vậy hoán vị đầu tiên sẽ là <123...(n-1)n>, hoán vị cuối cùng là <n(n-1)...321>
+Hoán vị sinh ra sẽ phải lớn hơn hoán vị hiện tại, hơn thế nữa phải là hoán vị vừa đủ lớn hơn 
+hoán vị hiện tại theo nghĩa không thể có một hoán vị khác chen giữa chúng khi sắp xếp thứ tự 
+
++) Input: nhập n ở dòng đầu tiên
+
++) Output: Mỗi dòng sau in một hoán vị trong n! hoán vị
+
+*Ví dụ với n = 4 ta phải liệt kê đủ 24 hoán vị:
+
+Input		Output
+4		1234
+		1243
+		1324
+		1342
+		1423
+		1432
+		2134
+		2143
+		2314
+		2341
+		2413
+		2431
+		3124
+		3142
+		3214
+		3241
+		3412
+		3421	
+		4123
+		4132
+		4213
+		4231
+		4312
+		4321		 

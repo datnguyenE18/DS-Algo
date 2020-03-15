@@ -1,0 +1,27 @@
+Tú là một học sinh thông minh nhưng rất lười. Một ngày đẹp trời Tú cùng các bạn ra ngoài chơi đến tận khuya mới về đến nhà. Khi về đến nơi, Tú nhận ra ngày mai sẽ phải nộp bài tập về nhà môn Toán. Đề bài của Tú là vẽ những hình tam giác có kích thước cho sẵn. Những do mải chơi nên trong đầu Tú lúc này không nhớ gì nữa !! Các bạn nãy giúp Tú nhé…
+
+Input
+	Dòng đầu tiên nhập 2 số a và k. Trong đó:
+	a là chiều cao của tam giác ( 1 < a <= 20 )
+	k là kiểu của tam giác. Biết rằng k chỉ nhận 2 giá trị duy nhất là k = 1 và k = 2
+		+ Với k=1 là tam giác cân
+		+ Với k=2 là tam giác vuông
+Output
+	Dòng tiếp theo in ra kết quả. Với mỗi bộ test in ra màn hình duy nhất một tam giác bằng các kí tự “*” thỏa mãn yêu cầu.
+
+Example
+
+Input:
+3 1	
+Output:
+  *
+ * *
+*****  
+
+Input :
+4 2	
+Output:
+*
+**
+* *
+****

@@ -1,0 +1,31 @@
+Cho một dãy số a1.. aN. Một nghịch thế là một cặp số u, v sao cho u < v và au > av. Nhiệm vụ của bạn là đếm số nghịch thế.
+
+Dữ liệu
+Dòng đầu ghi số nguyên dương N.
+N dòng sau mỗi dòng ghi một số ai ( 1 ≤ i ≤ N ).
+Kết quả
+Ghi trên một dòng số M duy nhất là số nghịch thế.
+
+Giới hạn
+1 ≤ N ≤ 60000
+1 ≤ ai ≤ 60000
+
+Ví dụ
+Dữ liệu:
+3
+3
+1
+2
+
+Kết quả
+2
+
+************************************************************************************************************************
+Gợi ý:
+ dùng cây IT để làm:
+
+Vì 1<=ai<=60000 nên ta dùng một mảng it[60001] để đánh dấu sự xuất hiện của các giá trị.  it[i]=k tức là trong đoạn ta xét hiện thời, số i đã xuất hiện k lần.
+
+Khởi đầu số nghịch thế bằng 0: ds=0.
+
+Ta xét từ cuối mảng tới đầu mảng, mỗi lần gặp giá trị a[i], ta tính tổng các số trong mảng it từ 1 tới a[i]-1. Tức là tính xem có bao nhiêu số nhỏ hơn số a[i] đã xuất hiện. (Phần này dùng it tổng.) Sau đó cập nhật a[i] vào cây, tăng it[a[i]] lên một đơn vị.
