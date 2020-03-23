@@ -1,0 +1,6 @@
+Viết chương trình nhập vào từ file một số giây từ 0 đến 86399, đổi số giây nhập vào thành dạng "giờ:phút:giây", mỗi thành phần là một số nguyên có 2 chữ số. 
+Ví dụ: 2:11:5
+
+input: 		output:
+77		0:1:17
+
