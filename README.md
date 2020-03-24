@@ -1,6 +1,6 @@
 # Note:
 
-+) Debug: https://youtu.be/7i59zU6D3MI
++) Debug: https://youtu.be/_U857Ubrx9c
 
 +) Link:
 Blog Hùng Lê: https://giaithuatlaptrinh.github.io/ 
