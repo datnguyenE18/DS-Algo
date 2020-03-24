@@ -1,0 +1,44 @@
+Smallest Number
+
+Cho bốn số nguyên dương X, Y, Z và N. Hãy tìm số nguyên dương nhỏ nhất có N chữ số chia hết đồng thời cho X, Y, Z. Ví dụ với X = 2, Y = 3, Z = 5, N = 4 ta tìm được số nguyên dương nhỏ nhất có 4 chữ số là 1020 chia hết cho cả 2, 3, 5.
+
+Input:
+	+) Dòng đầu tiên đưa vào số lượng test T (T≤100).
+	+) Những dòng kế tiếp đưa vào T bộ test. Mỗi bộ test là bộ bốn số X, Y, Z, N. Các số X, Y, Z, N 	   	   thỏa mãn ràng buộc: 1≤ X, Y, Z ≤105; N≤18.
+
+Output:
+	+) Đưa ra theo từng dòng kết quả mỗi test là số nguyên nhỏ nhất có N chữ số chia hết đồng thời cho 	   X, Y, Z. Trong trường hợp không có số nguyên N chữ số thỏa mãn yêu cầu bài toán đưa ra giá trị 	   -1.
+
+Input 			Output
+3
+2 3 5 4			1020
+4 5 6 3			120
+3 5 7 2			-1
+
+=========================================================================================================
+Gợi ý:
+1) Tìm số n chữ số nhỏ nhất là pow (10, n-1).
+2) Tìm LCM của 3 số x, y và z đã cho.
+3) Tìm phần còn lại của LCM khi chia cho pow (10, n-1).
+4) Thêm LCM của LCM - phần còn lại vào pow (10, n-1). Nếu bổ sung này vẫn là một số chữ số, chúng tôi trả về kết quả. Khác chúng tôi trở lại Không thể.
+
+Minh họa:
+Giả sử n = 4 và x, y, z lần lượt là 2, 3, 5.
+1) Trước tiên hãy tìm số có ít nhất bốn chữ số, ví dụ 1000,
+2) LCM là 2, 3, 5 nên LCM là 30.
+3) Tìm lời nhắc của 1000% 30 = 10
+4) Trừ phần còn lại từ LCM, 30 - 10 = 20. Kết quả là 1000 + 20 = 1020.
+
+----------------------------------------------------------------------------------------------------------
+Nguyên bản:
+1) Find smallest n digit number is pow(10, n-1).
+2) Find LCM of given 3 numbers x, y and z.
+3) Find remainder of the LCM when divided by pow(10, n-1).
+4) Add the “LCM – remainder” to pow(10, n-1). If this addition is still a n digit number, we return the result. Else we return Not possible.
+
+Illustration :
+Suppose n = 4 and x, y, z are 2, 3, 5 respectively.
+1) First find the least four digit number i.e. 1000,
+2) LCM of 2, 3, 5 so the LCM is 30.
+3) Find the reminder of 1000 % 30 = 10
+4) Subtract the remainder from LCM, 30 – 10 = 20. Result is 1000 + 20 = 1020.

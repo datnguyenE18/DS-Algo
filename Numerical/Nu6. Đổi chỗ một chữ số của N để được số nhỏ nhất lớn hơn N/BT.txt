@@ -1,0 +1,16 @@
+Lagest Smaller N. 
+Cho số tự nhiên N. Bạn chỉ được phép sử dụng nhiều nhất một phép đổi chỗ để nhận được số lớn nhất nhỏ hơn N. Ví dụ với số N=12435, sử dụng một phép đổi chỗ ta nhận được số lớn nhất nhỏ hơn N là 12354. Với số N=12345 ta không có phép đổi chỗ.
+
+Input:
+	+)  Dòng đầu tiên đưa vào T là số lượng bộ test.
+	+)  T dòng tiếp đưa các bộ test. Mỗi bộ test được viết trên một dòng là một xâu ký tự số không
+	    	có ký tự ‘0’ đầu tiên.
+	+)  Các số T, N thỏa mãn ràng buộc: 1≤T≤100; 1≤length(N) ≤105;
+Output:
+	+)  Đưa ra kết quả mỗi test theo từng dòng, trong đó -1 được xem là test không có phép đổi chỗ.
+
+Input 				Output
+
+2
+12435				12345
+12345				-1
