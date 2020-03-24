@@ -1,7 +1,6 @@
-# DS - Algo
- CTDL & Giải thuật
+# Note:
 
-+) Debug: 
++) Debug: https://youtu.be/7i59zU6D3MI
 
 +) Link:
 Blog Hùng Lê: https://giaithuatlaptrinh.github.io/ 
