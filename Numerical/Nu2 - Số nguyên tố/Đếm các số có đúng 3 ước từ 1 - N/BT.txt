@@ -1,0 +1,15 @@
+Cho số tự nhiên N. Nhiệm vụ của bạn là hãy đếm tất cả các số có đúng ba ước số. Ví dụ n=100, ta có các số 4.
+
+Input
+	+) Dòng đầu tiên đưa vào số lượng test T. 
+	+) Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một số N. 
+	+) T, N thỏa mãn rang buộc 1≤T≤100; 1≤N ≤1012 .
+
+Output
+	+) Đưa ra kết quả mỗi test theo từng dòng.
+
+Example
+Input	 	Output
+2 
+50		4
+200		6

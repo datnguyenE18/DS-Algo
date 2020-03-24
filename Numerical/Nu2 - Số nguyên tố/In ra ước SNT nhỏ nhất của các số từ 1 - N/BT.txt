@@ -1,0 +1,18 @@
+Leat Prime Factor. 
+
+Cho số tự nhiên N. Nhiệm vụ của bạn là in ra ước số nguyên tố nhỏ nhất của các
+số từ 1 đến N. Ước số nguyên tố nhỏ nhất của 1 là 1. Ước số nguyên tố nhỏ nhất của các số chẵn là 2.
+Ước số nguyên tố nhỏ nhất của các số nguyên tố là chính nó.
+
+Input:
+	+) Dòng đầu tiên đưa vào số lượng test T.
+	+) Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một số N được ghi trên một dòng.
+	+) T, N thỏa mãn ràng buộc: 1≤T≤100; 1≤N≤10000.
+
+Output:
+	+) Đưa ra kết quả mỗi test theo từng dòng.
+
+Input: 			Output:
+2 
+6			1 2 3 2 5 2
+10			1 2 3 2 5 2 7 2 3 2

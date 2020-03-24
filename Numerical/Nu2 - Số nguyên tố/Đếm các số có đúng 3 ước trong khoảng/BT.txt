@@ -1,0 +1,16 @@
+Cho hai số L, R. Nhiệm vụ của bạn là hãy đếm tất cả các số có đúng ba ước số trong khoảng [L, R].
+Ví dụ L =1, R =10, ta có kết quả là 2 vì chỉ có số 3 và 9 là có đúng 3 ước số.
+
+Input
+	+) Dòng đầu tiên đưa vào số lượng test T.
+	+) Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là cặp số L, R.
+	+) T, N thỏa mãn rang buộc 1≤T≤100; 1≤L, R ≤1012 .
+
+Output
+	+) Đưa ra kết quả mỗi test theo từng dòng.
+
+Example:
+Input			 	Output
+2 
+1 10				2
+1 1000000000000			78498
