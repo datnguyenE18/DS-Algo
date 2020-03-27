@@ -1,0 +1,12 @@
+Viết chương trình vẽ một tam giác cân bằng các dấu ‘*” với chiều cao nhập từ từ bàn phím (chiều cao lớn hơn 1)
+
+VD: 
+
+Input:	
+3	
+
+Output:
+
+  *
+ ***
+*****
