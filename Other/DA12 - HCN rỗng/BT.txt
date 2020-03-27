@@ -1,0 +1,10 @@
+Viết chương trình vẽ hình chữ nhật rỗng bằng các dấu * với kích cỡ chiều ngang a và chiều dọc b nhập từ bàn phím (a và b là số nguyên dương lớn hơn 2)
+
+Input:	
+4 3
+
+Output:
+
+****
+*  *
+****
