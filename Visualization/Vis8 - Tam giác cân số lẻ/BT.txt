@@ -1,0 +1,9 @@
+Viết chương trình vẽ một tam giác cân ngược có dạng sau với chiều cao nhập từ bàn phím (chiều cao lớn hơn 1). Để ý là các số hàng sau lớn hơn hàng trước x đơn vị (số x cũng nhập từ file). Dữ liệu cho vào sẽ đảm bảo số lớn nhất của tam giác không vượt quá 9
+
+Input:	
+3	
+
+Output:
+11111
+ 333
+  5
