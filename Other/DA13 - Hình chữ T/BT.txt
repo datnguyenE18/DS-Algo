@@ -1,0 +1,1 @@
+Viết chương trình vẽ một chữ T bằng các dấu “*” với chiều cao và rộng nhập từ bàn phím
