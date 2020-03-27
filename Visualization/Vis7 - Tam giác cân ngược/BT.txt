@@ -1,0 +1,9 @@
+Viết chương trình vẽ một tam giác cân ngược bằng các dấu ‘*” với chiều cao nhập từ bàn phím (chiều cao lớn hơn 1)	
+
+Input:
+3	
+
+Output
+*****
+ *** 
+  *   
