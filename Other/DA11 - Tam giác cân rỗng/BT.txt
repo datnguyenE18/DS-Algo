@@ -1,6 +1,6 @@
-Viết chương trình vẽ một tam giác cân rỗng bằng các dấu ‘*” với chiều cao nhập từ file (chiều cao lớn hơn 2)
-VD:
-	
+Viết chương trình vẽ một tam giác cân rỗng bằng các dấu ‘*” với chiều cao nhập từ bàn phím (chiều cao lớn hơn 2)
+
+VD:	
 Input:
 4
 
