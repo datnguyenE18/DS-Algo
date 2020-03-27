@@ -2,12 +2,11 @@
 using namespace std;
 
 int main () {
-	int row = 1, column;
-	cin >> column;
-	for ( ; row <= column; row++ ) {
-		int ast = 2 * row - 1; //ast = asterisk
-		for ( int i = 1; i <= column - ast / 2 - 1; i++ ) cout << " ";
-		for ( int i = 1; i <= ast; i++ ) cout << "*";
+	int column; cin >> column;
+
+	for ( int row = 1; row <= column; row++ ) {
+		for ( int i = 1; i <= column - row; i++ ) cout << " ";
+		for ( int i = 1; i <= 2 * row - 1; i++ ) cout << "*";
 		cout << "\n";
 	} system ( "pause" );
 }
