@@ -1,0 +1,16 @@
+Viết chương trình vẽ một con bướm có dạng sau với chiều cao nhập từ bàn phím. 
+
+VD:
+
+Input	
+7	
+
+Output:
+
+*     *
+**   **
+*** ***
+*******
+*** ***
+**   **
+*     *

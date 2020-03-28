@@ -1,0 +1,12 @@
+Viết chương trình vẽ một chữ H bằng các dấu ‘*” với chiều cao và rộng nhập từ bàn phím 
+
+Input:	
+5 4	
+
+Output:
+
+*  *
+*  *
+****
+*  *
+*  *
