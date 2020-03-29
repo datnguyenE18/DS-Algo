@@ -1,0 +1,20 @@
+Viết chương trình vẽ một hàng rào bằng các dấu “*” với chiều cao và dài nhập và khoảng cách giữa các cột nhập từ bàn phím (tất cả các số đều lớn hơn 1). Biết rằng cột đầu tiên luôn ở vị trí ngoài cùng bên trái của phạm vi hàng rào
+
+Input 1:	
+3 10 3	
+
+Output 1:
+
+*  *  *  *
+*  *  *  *
+**********
+
+--------------------------------
+Input 2:	
+3 6 2	
+
+Input 2:
+
+* * *  
+* * *  
+******
