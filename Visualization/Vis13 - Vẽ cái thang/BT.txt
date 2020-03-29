@@ -1,0 +1,29 @@
+Viết chương trình vẽ một cái thang bằng các dấu ‘*” với chiều cao và rộng nhập và khoảng cách giữa các thanh ngang nhập từ bàn phím(chiều rộng lớn hơn 2 và hai số còn lại đều lớn hơn 1). Biết rằng bậc thang cao nhất luôn có thứ tự thứ 2 từ trên xuống và bậc thang cuối cùng phải nằm trong phạm vi thang
+
+Input 1:	
+7 4 3	
+
+Output 1:
+
+*  *
+****
+*  *
+*  *
+****
+*  *
+*  *
+
+---------------------------------------------------------
+Input 2: 
+8 4 2	
+
+Output 2:
+
+*  *
+****
+*  *
+****
+*  *
+****
+*  *
+****
