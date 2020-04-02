@@ -1,0 +1,19 @@
+Bạn hãy tìm chữ số lớn nhất của 1 số nguyên bất kì
+
+Input :
+Số N : số lượng số cần nhập
+Sau đó là N số nguyên bất kì
+
+Output :
+Chữ số lớn nhất của các số đã nhập theo thứ tự tương ứng
+
+Ví dụ:
+
+Input			Output
+10
+0			0
+5			5
+123459			9
+099705			9			
+1527			7
+10			1
