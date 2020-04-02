@@ -1,0 +1,19 @@
+Bạn hãy đếm số chữ số của 1 số nguyên bất kì
+
+Input :
+Số N : số lượng số cần nhập
+Sau đó là N số nguyên bất kì
+
+Output :
+Số lượng chữ số của các số đã nhập theo thứ tự tương ứng
+
+Ví dụ:
+Input			Output
+123459			6		
+99975			5
+1527			4
+10			2
+368436			6
+
+
+
