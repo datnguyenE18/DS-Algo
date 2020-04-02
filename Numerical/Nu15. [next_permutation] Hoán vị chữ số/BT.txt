@@ -1,0 +1,25 @@
+Cho trước một số nguyên dương X. Nhiệm vụ của bạn là tìm số nhỏ nhất lớn hơn X, mà có các chữ số giống hệt với X.
+
+Input
+Dòng đầu tiên là số nguyên X (1 ≤ X ≤ 999 999).
+Chữ số đầu tiên của X luôn khác 0.
+
+Output
+In ra đáp số trên một dòng. Nếu không có đáp số, in ra “0”.
+
+Example:
+
+Test 1:
+Input: 			Output:
+156 			165
+
+Test 2:
+Input: 			Output:
+330 			0
+
+Test 3:
+Input:			Output:
+27711 			71127
+
+
+
