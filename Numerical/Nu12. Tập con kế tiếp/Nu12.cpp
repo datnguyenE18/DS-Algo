@@ -20,10 +20,7 @@ void solve ( int x[], int n, int k ) {
 	for ( int i = k - 1; i >= 0; i-- ) {
 		if ( x[i] <= n - k + i ) {
 			mark = ++x[i];
-			for ( int j = i + 1; j < k; j++ ) {
-				x[j] = mark + 1;
-				mark++;
-			}
+			for ( int j = i + 1; j < k; j++ ) x[j] = mark++;
 			printf ( x, k );
 			return;
 		}
