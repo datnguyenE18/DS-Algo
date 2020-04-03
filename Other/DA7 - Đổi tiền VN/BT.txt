@@ -1,0 +1,4 @@
+Có 10 loại tiền 500đ, 1000đ, 2000đ, 5000đ, 10000đ, 20000đ, 50000đ, 100000đ, 200000đ, 500000đ. Hãy viết chương trình nhập vào 1 số tiền ( phải là bội số của 500), sau đó cho biết cách đổi số tiền này ra sao cho số tờ cần dùng là ít nhất
+Dữ liệu vào: 
+ + Dòng đầu tiên gồm 1 số nguyên dương NTEST là số lượng test của bài
+ + NTEST dòng sau mỗi dòng gồm một số nguyên dương S (S >= 500đ) là số tiền cần đổi
