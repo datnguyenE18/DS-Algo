@@ -1,0 +1,14 @@
+Cho 1 ma trận hình vuông, hãy tính tổng các phần tử của từng hàng
+Dữ liệu vào: 
+  + Bắt đầu là một dòng chứa số n là kích cỡ, tiếp theo là n x n số nguyên của ma trận n hàng, n cột
+In ra màn hình n số mỗi số trên một dòng là tổng từng hàng từ 1 đến n của ma trận
+
+Ví dụ:
+
+Input			Output	
+3
+1 1 1			3
+1 2 3			6
+5 4 1			10
+
+

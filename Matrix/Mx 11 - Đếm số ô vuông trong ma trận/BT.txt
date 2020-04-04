@@ -1,0 +1,24 @@
+Cho một ma trận nhị phân (các phần tử trong ma trận chỉ có giá trị 0 hoặc 1)
+Tìm số lượng các hình vuông thuộc ma trận trên sao cho các phần tử trong hình vuông đều có giá trị khác 0
+Dữ liệu đầu vào: 
+ + Dòng đầu tiên ghi một số NTEST là số lượng ma trận (0 < NTEST <=1000)
+ + Tiếp theo là NTEST bộ dữ liệu trong đó:
+	+ Dòng đầu gồm 3 số: số hàng, số cột và kích cỡ của hình vuông cần tìm (giá trị không quá 100)
+            + Các giá trị của ma trận tương ứng
+
+Đầu ra: 
+Gồm NTEST dòng, mỗi dòng hiện số lượng hình vuông thỏa mãn yêu cầu ứng với từng ma trận và kích cỡ hình vuông đã cho.
+
+Ví dụ:
+Input			Output	
+2
+2 2 1
+0 1			3
+1 1
+4 5 3
+1 1 1 1 0		4
+1 1 1 1 0
+1 1 1 1 0
+1 1 1 1 0	
+
+
