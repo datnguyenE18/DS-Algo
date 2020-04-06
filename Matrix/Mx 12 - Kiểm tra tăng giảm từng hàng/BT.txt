@@ -1,0 +1,19 @@
+Có n cửa hàng đều kinh doanh trong m tháng (m>5). Doanh thu của từng cửa hàng trong từng tháng được lưu trữ. Một cửa hàng sẽ bị đóng cửa nếu nó có doanh thu giảm liên tiếp trong 3 tháng. Hãy cho biết cửa hàng nào sẽ bị đóng cửa.
+Bài tập có Ntest
+
+Dữ liệu vào: 
+ + Dòng đầu tiên gồm 1 số nguyên dương NTEST (NTEST <= 100) là số lượng test của bài
+ + Mỗi test là một ma trận, bắt đầu là một dòng chứa số n và m, tiếp theo là n x m số nguyên lần lượt là doanh thu các tháng của từng cửa hàng, mỗi cửa hàng ghi trên 1 dòng
+Dữ liệu ra: Ghi ra danh sách thứ tự các cửa hàng bị đóng cửa, nếu không có cửa hàng nào bị đóng cửa ghi ra 1 số không “0”
+
+Ví dụ:
+
+Input				Output	
+2
+3 6
+1 2 3 2 1 2			2 3
+1 4 3 2 1 0
+10 9 8 7 6 5
+1 7
+1 2 3 4 5 6 8			0	
+
