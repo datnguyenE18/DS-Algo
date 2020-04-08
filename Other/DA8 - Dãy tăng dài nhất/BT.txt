@@ -1,0 +1,20 @@
+Viết chương trình đọc n số nguyên, tìm dãy số liên tiếp các phần tử là dãy tăng dài nhất. Nếu có nhiều dãy như vậy chọn dãy có tổng các giá trị phần tử lớn nhất
+
+Dữ liệu vào: 
+ + Dòng đầu tiên gồm 1 số nguyên dương NTEST (NTEST <= 100) là số lượng test của bài
+ + Mỗi test gồm 2 dòng, dòng thứ nhất gồm 1 số nguyên dương n (n<=100), dòng thứ 2 là n số nguyên
+Dữ liệu ra: mỗi test hiện ra độ dài của dãy và tổng các giá trị phần tử dãy đó
+
+Input					Output	
+4
+4
+1 2 3 3					3 6
+8
+1 1 1 2 2 4 4 4				2 6
+11
+1 2 3 4 5 3 3 6 8 9 2			5 15
+4
+1 3 5 7					4 16
+
+
+
