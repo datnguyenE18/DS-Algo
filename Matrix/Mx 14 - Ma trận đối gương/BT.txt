@@ -1,0 +1,23 @@
+Cho 1 ma trận A (n x n), ma trận a được gọi là “đối gương” nếu tất cả các phần tử bằng các phần tử đối xứng với nó qua trục dọc trung tâm. Hãy kiểm tra xem ma trận vừa nhập có đối gương hay không? Nếu đối gương ghi một số 1 và 0 nếu ngược lại
+Bài tập có Ntest
+
+Dữ liệu vào: 
+ + Dòng đầu tiên gồm 1 số nguyên dương NTEST (NTEST <= 100) là số lượng test của bài
+ + Mỗi test là một ma trận, bắt đầu là một dòng chứa số nguyên dương n là kích cỡ (1 < <=100), tiếp theo là n x n số nguyên
+
+Ví dụ:
+
+Input			Output
+
+3
+2
+1 1			1
+3 3
+3
+1 3 1			1
+1 0 1
+0 1 0
+3
+0 3 1			0
+3 0 1
+1 2 0	
