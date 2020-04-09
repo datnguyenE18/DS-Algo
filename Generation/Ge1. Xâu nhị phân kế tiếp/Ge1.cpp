@@ -1,7 +1,14 @@
-﻿#include <bits\stdc++.h>
+﻿/*
+**Next Bits String
+*/
+
+#include <bits/stdc++.h>
 using namespace std;
 
-void solve ( string num ) {
+int t;
+string num;
+
+void solve () {
 	int i = num.size () - 1;
 	for ( ; i >= 0; i-- ) {
 		if ( num[i] == '1' ) num[i] = '0';
@@ -15,10 +22,9 @@ void solve ( string num ) {
 }
 
 int main () {
-	int t; cin >> t;
-	string num;
+	cin >> t;
 	while ( t-- ) {
 		cin >> num;
-		solve ( num );
+		solve ();
 	} system ( "pause" );
 }
