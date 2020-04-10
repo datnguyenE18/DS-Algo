@@ -4,7 +4,7 @@ Ví dụ X[] =”010101” thì xâu nhị phân tiếp theo của X[] là “01
 Input:
  Dòng đầu tiên đưa vào số lượng test T.
  Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một xâu nhi phân X.
- T, X[] thỏa mãn ràng buộc: 1≤T≤100; 1≤length(X)≤103.
+ T, X[] thỏa mãn ràng buộc: 1 ≤ T ≤ 100; 1 ≤ length(X) ≤ 10^3.
 
 Output:
  Đưa ra kết quả mỗi test theo từng dòng.

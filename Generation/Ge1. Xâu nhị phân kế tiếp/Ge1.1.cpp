@@ -1,5 +1,5 @@
 ﻿/*
-**Generate all the binary strings of N bits
+**Next_binary_strings
 */
 
 #include<bits/stdc++.h>
