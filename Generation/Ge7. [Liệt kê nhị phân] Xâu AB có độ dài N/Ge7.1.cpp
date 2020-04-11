@@ -15,8 +15,8 @@ void nextString () {
 	while ( a[i] == 'B' && i > 0 ) 	i--;
 	if ( i == 0 ) check = true; // nếu i=0 tức là đã đến cấu hình cuối, gán biến check = true
 	else {
-		a[i] = 'B';    // còn không thì gán a[i]=1
-		for ( int j = i + 1; j <= n; j++ ) a[j] = 'A';   // gán tất cả phần tử phía sau a[i] =0
+		a[i] = 'B';    // còn không thì gán a[i] = B
+		for ( int j = i + 1; j <= n; j++ ) a[j] = 'A';   // gán tất cả phần tử phía sau a[i] = A
 	}
 }
 
@@ -26,7 +26,7 @@ int main () {
 	while ( t-- ) {
 		check = false;
 		cin >> n;
-		for ( int i = 1; i <= n; i++ ) a[i] = 'A';    // cấu hình đầu tiên gồm toàn số 0
+		for ( int i = 1; i <= n; i++ ) a[i] = 'A';    // cấu hình đầu tiên gồm toàn chữ A
 
 		while ( !check ) {
 			display ();       // hiển thị cấu hình
