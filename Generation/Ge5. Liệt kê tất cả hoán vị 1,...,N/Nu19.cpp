@@ -8,7 +8,7 @@ void out ( int n, int a[] ) {
 	cout << " ";
 }
 
-void next_permutation ( int n, int a[] ) {
+void next_permu ( int n, int a[] ) {
 	int i = n - 1;
 	while ( i > 0 && a[i] > a[i + 1] ) i--;
 	if ( i > 0 ) {
@@ -24,7 +24,7 @@ void next_permutation ( int n, int a[] ) {
 	} else test = false;
 }
 
-int main () {
+int main ( ) {
 	int T; cin >> T;
 
 	while ( T-- ) {
@@ -36,7 +36,7 @@ int main () {
 
 		while ( test ) {
 			out ( n, a );
-			next_permutation ( n, a );
+			next_permu ( n, a );
 		} cout << "\n";
 	} return 0;
 }
