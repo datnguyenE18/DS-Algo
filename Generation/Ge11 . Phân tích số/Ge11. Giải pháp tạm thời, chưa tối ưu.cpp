@@ -15,7 +15,7 @@ void Display () {
 	cout << "(";
 	for ( int i = 1; i < k; i++ )
 		cout << X[i] << " ";
-	cout << X[k] << ")" << " ";
+	cout << X[k] << ") ";
 }
 
 void Next_Division () {
