@@ -12,3 +12,5 @@ Input: 			Output:
 2
 01001			01101
 01101			01011
+
+Ý tưởng: Tạo ra String Gray rỗng. Hạ số đầu tiên xuống (thêm nguyên số đầu tiên vào Gray), các số sau thì so sánh với số ngay trước nó, ( s[i] so sánh với s[i - 1], giống nhau thì thêm 1 vào Gray, khác nhau thì thêm 0 vào => rồi in ra)
