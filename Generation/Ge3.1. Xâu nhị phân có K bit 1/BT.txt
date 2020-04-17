@@ -19,3 +19,4 @@ Input			Output
 			101
 			110
 
+Ý tưởng: Nghĩ đớn giản thì ta chỉ cần lập trình gần như in ra các xâu nhị phân có độ dài N. Chỉ khác là chúng ta chỉ in ra những xâu có K chữ số 1. Vì vậy ta chỉ cần thay đổi hàm In xâu ra màn hình để nó chỉ in ra những xâu có K chữ số 1. Một chú ý nhỏ nữa là ta thấy rằng trong các xâu nhị phân có K chữ số 1 và được sắp xếp theo thứ tự từ điển thì xâu đầu tiên luôn là 00..0011..11 (có K chữ số 1 ở cuối) nên ta thay đổi nhỏ ở hàm xây dựng xâu đầu tiên để nó xây dựng ngay từ xâu này thay vì phải xây dựng xâu 00...000 -> giảm số bước.  
