@@ -1,13 +1,1 @@
-﻿#include <bits/stdc++.h>
-using namespace std;
-
-int main () {
-	int t; cin >> t;
-	while ( t-- ) {
-		int stt; cin >> stt;
-		string s; cin >> s;
-		bool kq = next_permutation ( s.begin (), s.end () );
-		if ( kq ) cout << stt << " " << s << endl;
-		else cout << stt << " BIGGEST" << endl;
-	} return 0;
-}
+﻿#include<bits/stdc++.h>using namespace std;int t, stt;string x;string next_Permutation () {	int l = x.length ();	int i = l - 1;		while ( i >= 1 && x[i - 1] >= x[i] ) // bỏ qua dãy giảm dần ở bên phải		i--;		if ( i == 0 ) // nếu là giãy giảm dần thì giảm tới 0		return "BIGGEST";		for ( int j = l - 1; j > i - 1; j-- ) // tìm phần tử bên phải lớn hơn x[i-1]		if ( x[j] > x[i - 1] ) {			swap ( x[j], x[i - 1] );			break;		}		for ( int j = l - 1; i < j; i++, j-- ) // đổi chỗ x[i] ..... x[l-1]		swap ( x[i], x[j] );	return x;}int main () {	cin >> t;	while ( t-- ) {		cin >> stt >> x;		cout << stt << " " << next_Permutation () << "\n";	} system ( "pause" );}
