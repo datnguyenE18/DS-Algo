@@ -1,0 +1,1 @@
+Viết chương trình chuyển hệ nhị phân sang hệ thập phân
