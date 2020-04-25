@@ -1,0 +1,10 @@
+Một máy ATM hiện có n (n ≤ 30) tờ tiền có giá trị t[1], t[2], …, t[n]. Hãy tìm cách trả ít tờ nhất với số tiền đúng bằng S (các tờ tiền có giá trị bất kỳ và có thể bằng nhau).
+
+Input: Dòng đầu tiên gồm 2 số nguyên n và S (S ≤ 109). Dòng thứ hai chứa n số nguyên t[1], t[2], …, t[n] (t[i] ≤ 109)
+
+Output: Số tờ tiền ít nhất phải trả.
+
+Ví dụ
+Input		Output
+3 5		1
+1 4 5		
