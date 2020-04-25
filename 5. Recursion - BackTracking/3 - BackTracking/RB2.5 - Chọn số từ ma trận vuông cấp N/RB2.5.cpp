@@ -1,10 +1,9 @@
-﻿
-#include<bits/stdc++.h>
+﻿#include<bits/stdc++.h>
 using namespace std;
+
 vector<int> x ( 11 );
 vector<vector<int> > v;
-int a[11][11];
-int n, k;
+int a[11][11], n, k;
 bool check[11];
 
 bool checkSum () {
