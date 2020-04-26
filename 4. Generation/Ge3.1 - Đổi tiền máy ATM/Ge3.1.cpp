@@ -1,5 +1,4 @@
-﻿//Không tối ưu bằng Back_Tracking
-#include<bits/stdc++.h>
+﻿#include<bits/stdc++.h>
 using namespace std;
 
 int n, c[50], a[50], stop = 0, s;
