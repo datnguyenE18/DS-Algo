@@ -12,3 +12,5 @@ Input 					Output
 2
 5 10					10 5
 14 8					56 2
+
+Euclid: Nếu b≠0 thì d = USCLN(a, b) = USCLN(b, a % b). Nếu b = 0 thì a là ước số chung lớn nhất của a và b
