@@ -1,0 +1,41 @@
+Trong thông tin số, mỗi ký hiệu s phát đi được mã hóa bởi một dãy M bit nhị phân. Do quá trình truyền tin luôn xảy ra lỗi (phát đi ký hiệu này nhưng phía thu lại tưởng là ký hiệu khác) nên nhằm giảm thiểu số bit lỗi, người ta sử dụng mã Gray để mã hóa các ký hiệu sao cho hai ký hiệu liền kề nhau (s[i] và s[i+1] chỉ khác nhau duy nhất một bit). Ví dụ với M = 3:
+i - dạng thập phân i - dạng nhị phân g - mã Gray nhị phân
+0 000 000
+1 001 001
+2 010 011
+3 011 010
+4 011 110
+5 101 111
+6 110 101
+7 111 100
+
+Lưu ý là mã Gray của ký hiệu cuối cùng và ký hiệu đầu tiên (s[7] và s[0] trong trường hợp này) cũng chỉ khác nhau một bit.
+Gray code khá thông dụng trong các ứng dụng cần độ ổn định cao, do 2 mã bất kì nằm cạnh nhau chỉ khác nhau có 1 bit: ví dụ như:
+
+3 -> 010
+4 -> 110 // so với 3 - 010 thì khác bit 3
+5 -> 111 // so với 4 - 110 thì khác bit 1
+
+Cách tạo ra thủ công chuỗi gray code n bit từ chuỗi gray code n-1 bit là:
+
+- Viết chuỗi gray code n-1 bit ra, ghép thêm bit 0 ở đầu
+- Viết chuỗi gray code n-1 bit ra theo thứ tự ngược lại, ghép thêm bit 1 ở đầu
+
+Ví dụ:
+
+Chuỗi gray code 1 bit là 0, 1
+
+-> Chuỗi gray code 2 bit được thực hiện bằng cách:
+
+- Viết chuỗi gray code 1 bit ra (0, 1) , ghép thêm bit 0 ở đầu ( 00, 01)
+- Viết chuỗi gray code 1 bit ra theo thứ tự ngược lại (1, 0) , ghép thêm bit 1 ở đầu (11, 10)
+
+Như thế chuỗi gray code 2 bit là 00, 01, 11, 10
+
+-> Chuỗi gray code 3 bit được thực hiện bằng cách:
+
+- Viết chuỗi gray code 2 bit ra (00, 01, 11, 10) , ghép thêm bit 0 ở đầu (000, 001, 011, 010,)
+- Viết chuỗi gray code 2 bit ra theo thứ tự ngược lại (10, 11, 01, 00) , ghép thêm bit 1 ở đầu (110, 111, 101, 100)
+
+Như thế chuỗi gray code 3 bit là 000, 001, 011, 010, 110, 111, 101, 100
+Tiếp tục như thế...
