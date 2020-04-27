@@ -1,19 +1,8 @@
 ﻿#include <bits/stdc++.h>
 using namespace std;
-#define i64 long long
-#define fi first
-#define se second
-#define rz resize
-#define pb push_back
-#define mp make_pair
-#define whatIs(a) cerr << #a " is " << (a) << endl;
-
-const int N = 200005;
-const long long base = 1e9 + 7;
-const long long inf = 1e18 + 7;
 
 int n, a[1000], k,
-	C[1000][1000] = { 0 };
+C[1000][1000] = { 0 };
 bool check[1000];
 vector<string> v;
 
@@ -23,12 +12,14 @@ int Sum () {
 		sum += C[i][a[i]];
 	return sum;
 }
+
 void Init () {
 	for ( int i = 1; i <= n; i++ ) {
 		a[i] = i;
 		check[i] = true;
 	}
 }
+
 void Display () {
 	string s;
 	for ( int i = 1; i <= n; i++ ) {
@@ -51,6 +42,7 @@ void Try ( int i ) {
 		}
 	}
 }
+
 void Solve () {
 	cin >> n >> k;
 	for ( int i = 1; i <= n; i++ ) {

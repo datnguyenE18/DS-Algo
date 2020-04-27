@@ -1,21 +1,8 @@
 ﻿#include <bits/stdc++.h>
-#define i64 long long
-#define fi first
-#define se second
-#define rz resize
-#define pb push_back
-#define mp make_pair
-#define whatIs(a) cerr << #a " is " << (a) << endl;
-
-const int N = 200005;
-const long long base = 1e9 + 7;
-const long long inf = 1e18 + 7;
-
 using namespace std;
-int n, S;
-int a[100];
+
+int n, S, a[100], ans = 1e9 + 7;
 bool unVis[100];
-int ans = 1e9 + 7;
 long long tong = 0;
 
 void Try ( int i, int Sum ) {
