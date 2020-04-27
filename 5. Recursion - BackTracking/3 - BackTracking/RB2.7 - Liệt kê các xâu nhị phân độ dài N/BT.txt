@@ -1,0 +1,9 @@
+Viết chương trình liệt kê tất cả các xâu nhị phân độ dài N nhập từ bàn phím
+
+Input:
+	 Dòng đầu tiên đưa vào số lượng test T.
+	 Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test chỉ gồm một dòng: Độ dài N 
+		T, N thỏa mãn ràng buộc: 1 ≤ T ≤ 100; 1 ≤ N ≤ 10^3
+
+Output:
+	Đưa ra kết quả mỗi test
