@@ -1,22 +1,23 @@
 # Note:
 
-+) Debug: https://youtu.be/_U857Ubrx9c
++) [Debug](https://youtu.be/_U857Ubrx9c)
 
 +) Link:
 Blog Hùng Lê: https://giaithuatlaptrinh.github.io/ 
            & http://www.giaithuatlaptrinh.com/
 
-+) DS: https://www.hackerearth.com/practice/data-structures 49
-Algo: https://www.hackerearth.com/practice/algorithms 22
++) [Hackerearth](https://www.hackerearth.com/practice/)
 
-+) DS & Algo: https://www.geeksforgeeks.org/ 6
++) [Geeksforgeeks](https://www.geeksforgeeks.org/) 
 
-+) Lộ trình học CTDL & GT phục vụ ôn thi ACM/ICPC: https://github.com/Hieunv1996/ACM-ICPC-Preparation 67
++) [Lộ trình học CTDL & GT phục vụ ôn thi ACM/ICPC](https://github.com/Hieunv1996/ACM-ICPC-Preparation)
 
-+) Nguyễn Văn Hiếu
-DS: https://nguyenvanhieu.vn/cau-truc-du-lieu/ 55
-Algo: https://nguyenvanhieu.vn/thuat-toan/ 42
++) [Nguyễn Văn Hiếu](https://nguyenvanhieu.vn/)
 
-+) Các tài liệu bổ sung:
-• Giải thuật và lập trình 20 - thầy Lê Minh Hoàng
-• Introduction to Algorithms - bản tiếng Việt 43
++) Tham khảo:
+
+• [Giải thuật và lập trình - thầy Lê Minh Hoàng](https://drive.google.com/file/d/1bzYOT09yRXISFOHO01fFNIzWHI5VNr2J/view) 
+
+• [(VNese) Introduction to Algorithms](https://drive.google.com/file/d/1FXpULLROM3dYOBTCKqLiJ6pA4vhifkS7/view) 
+
+• [Tài liệu chuyên tin](https://drive.google.com/file/d/1w6_ESlscjUWyeRw9pmjZxfND6qqIa6DI/view)
