@@ -1,24 +1,18 @@
 # Note:
 
-+) Debug: https://youtu.be/_U857Ubrx9c
++) [Debug](https://youtu.be/_U857Ubrx9c)
 
 +) Link:
 Blog Hùng Lê: https://giaithuatlaptrinh.github.io/ 
            & http://www.giaithuatlaptrinh.com/
 
-+) [Data Structures (hackerearth)](https://www.hackerearth.com/practice/data-structures)
++) [Hackerearth](https://www.hackerearth.com/practice/)
 
-   [Algorithms (hackerearth)](https://www.hackerearth.com/practice/algorithms)
-
-+) DS & Algo: https://www.geeksforgeeks.org/ 
++) [Geeksforgeeks](https://www.geeksforgeeks.org/) 
 
 +) [Lộ trình học CTDL & GT phục vụ ôn thi ACM/ICPC](https://github.com/Hieunv1996/ACM-ICPC-Preparation)
 
-+) Nguyễn Văn Hiếu
-
-DS: https://nguyenvanhieu.vn/cau-truc-du-lieu/
-
-Algo: https://nguyenvanhieu.vn/thuat-toan/
++) [Nguyễn Văn Hiếu](https://nguyenvanhieu.vn/)
 
 +) Tham khảo:
 
