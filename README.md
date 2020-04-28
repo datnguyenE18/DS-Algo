@@ -6,7 +6,7 @@
 Blog Hùng Lê: https://giaithuatlaptrinh.github.io/ 
            & http://www.giaithuatlaptrinh.com/
 
-+) DS: https://www.hackerearth.com/practice/data-structures 49
++) [Data Structures] (https://www.hackerearth.com/practice/data-structures)
 Algo: https://www.hackerearth.com/practice/algorithms 22
 
 +) DS & Algo: https://www.geeksforgeeks.org/ 6
@@ -18,5 +18,5 @@ DS: https://nguyenvanhieu.vn/cau-truc-du-lieu/ 55
 Algo: https://nguyenvanhieu.vn/thuat-toan/ 42
 
 +) Các tài liệu bổ sung:
-• Giải thuật và lập trình 20 - thầy Lê Minh Hoàng
-• Introduction to Algorithms - bản tiếng Việt 43
+• Giải thuật và lập trình - thầy Lê Minh Hoàng : 
+• [VNese] Introduction to Algorithms 
