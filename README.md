@@ -6,10 +6,10 @@
 Blog Hùng Lê: https://giaithuatlaptrinh.github.io/ 
            & http://www.giaithuatlaptrinh.com/
 
-+) [Data Structures] (https://www.hackerearth.com/practice/data-structures)
-Algo: https://www.hackerearth.com/practice/algorithms 22
++) [Data Structures (hackerearth)](https://www.hackerearth.com/practice/data-structures)
+   [Algorithms (hackerearth)](https://www.hackerearth.com/practice/algorithms)
 
-+) DS & Algo: https://www.geeksforgeeks.org/ 6
++) DS & Algo: https://www.geeksforgeeks.org/ 
 
 +) Lộ trình học CTDL & GT phục vụ ôn thi ACM/ICPC: https://github.com/Hieunv1996/ACM-ICPC-Preparation 67
 
