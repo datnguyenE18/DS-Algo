@@ -53,7 +53,7 @@ void Trans_2_Inc_mat () {
 	}
 }
 
-//In ra ma trận liên thuộc vừa đọc
+//In ra ma trận liên thuộc
 void dis_Inc_mat () {
 	cout << "\nMa tran lien thuoc:\n\n";
 	for ( i = 1; i <= ver; i++ ) {
