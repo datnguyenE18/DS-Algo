@@ -42,8 +42,8 @@ void dis_adj_mat () {
 //Chuyển sang ma trận liên thuộc
 void Trans_2_Inc_mat () {
 	int brd = 1; //Bridge
-	for ( i = 1; i <= edg; i++ ) {
-		for ( j = 1; j <= edg; j++ ) {
+	for ( i = 1; i <= ver; i++ ) {
+		for ( j = 1; j <= ver; j++ ) {
 			if ( adj_mat[i][j] == 1 ) { // tức là i nối với j qua bridge
 				inc_mat[i][brd] = 1;
 				inc_mat[j][brd] = -1;
