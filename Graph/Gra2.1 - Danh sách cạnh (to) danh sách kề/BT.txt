@@ -1,0 +1,3 @@
+Cài đặt phương pháp biểu diễn đồ thị bằng danh sách kề với khuôn dạng dữ liệu trong file dothi.in theo khuôn dạng:
+	+) Dòng đầu tiên ghi lại hai số N, M tương ứng với số đỉnh và số cạnh của đồ thị. Hai số được viết cách nhau một vài khoảng trống.
+	+) M dòng kế tiếp mỗi dòng ghi lại một cạnh của đồ thị. Đỉnh đầu và đỉnh cuối mỗi được viết cách nhau một vài khoảng rỗng.
