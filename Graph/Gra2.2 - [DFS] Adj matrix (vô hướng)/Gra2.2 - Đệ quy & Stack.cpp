@@ -81,7 +81,7 @@ void DFS_stack ( int node ) {
 
 	while ( index > 0 ) { //stack ≠ ∅
 		s = stack0[index]; ////lấy đỉnh ở đầu stack
-		index--; //Rồ xóa phần tử đó của stack
+		index--; //Rồi xóa phần tử đó của stack
 		for ( i = 1; i <= ver; i++ ) { //i ∈ Adj(s)
 			if ( adj_mat[s][i] == 1 && visited[i] == 0 ) { //nếu i chưa duyệt và giá trị tại đó = 1 
 				cout << i << " "; //Xử lý đỉnh i : In ra đỉnh đó
