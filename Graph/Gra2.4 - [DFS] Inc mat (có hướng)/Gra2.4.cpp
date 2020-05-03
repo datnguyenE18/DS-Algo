@@ -66,7 +66,7 @@ void DFS_dequi ( int node ) {
 	for ( int j = 1; j <= edg; j++ ) {
 		if ( inc_mat[node][j] == 1 ) {
 			for ( int i = 1; i <= ver; i++ ) {
-				if ( inc_mat[i][j] == -1 && visited[i] == 0 ) { 
+				if ( inc_mat[i][j] == -1 && visited[i] == 0 ) {
 					DFS_dequi ( i );
 				}
 			}
@@ -74,18 +74,18 @@ void DFS_dequi ( int node ) {
 	}
 }
 
-//DFS sử dụng stack
-void DFS_stack ( int node ) {
-	int stack0[100], 
-		index = 1, 
-		s; 
-	stack0[index] = node; 
-	cout << node << " "; 
-	visited[node] = 1; 
+//DFS sử dụng Array
+void DFS_arr ( int node ) {
+	int stack0[100],
+		index = 1,
+		s;
+	stack0[index] = node;
+	cout << node << " ";
+	visited[node] = 1;
 	while ( index > 0 ) {
-		s = stack0[index]; 
-		index--; 
-		for ( i = 1; i <= edg; i++ ) { 
+		s = stack0[index];
+		index--;
+		for ( i = 1; i <= edg; i++ ) {
 			int z = 0;
 			if ( inc_mat[s][i] == 1 ) {
 				for ( j = 1; j <= ver; j++ ) {
@@ -133,14 +133,15 @@ int main () {
 		visited[i] = 0;
 	}
 
-	cout << "\nDFS_stack(" << node << ") : ";
-	DFS_stack ( node );
+	cout << "\nDFS_arr(" << node << ") : ";
+	DFS_arr ( node );
 
 	cout << "\n";
 	return 0;
 }
 
 /*
+Vertex = 20
 Density = 0.2
 
 Created random Inc matrix with density 0.2 vs actual density is:  0.19
@@ -169,5 +170,5 @@ node = 1
 
 DFS_dequi(1) : 1 5 7 10 16 11 14 17 18 19 15 6 8 13
 
-DFS_stack(1) : 1 5 7 10 16 11 14 17 18 19 15 6 8 13
+DFS_arr(1) : 1 5 7 10 16 11 14 17 18 19 15 6 8 13
 */

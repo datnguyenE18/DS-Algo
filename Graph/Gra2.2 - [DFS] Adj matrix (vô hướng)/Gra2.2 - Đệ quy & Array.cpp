@@ -2,19 +2,19 @@
 using namespace std;
 
 int ver, //số đỉnh
-adj_mat[100][100], // Mảng 2 chiều lưu ma trận kề
-visited[100],//Lưu tình trạng duyệt của node
-i, j, node;
+	adj_mat[100][100], // Mảng 2 chiều lưu ma trận kề
+	visited[100],//Lưu tình trạng duyệt của node
+	i, j, node;
 double density; // density = ratio between #edges / N^2 - tỉ lệ cạnh
 
 
 //Hàm sinh số ngẫu nhiên trong khoảng [0 , 1]:
-double prob ( ) {
-	return ( double ) rand ( ) / RAND_MAX;
+double prob () {
+	return ( double ) rand () / RAND_MAX;
 }
 
 //Hàm tạo ma trận kề ngẫu nhiên từ ver và density cho trước
-void rand_graph ( ) {
+void rand_graph () {
 	int edge_count = 0;
 
 	//Ban đầu tạo ma trận ver đỉnh chỉ chứa 0 (Tức các đỉnh rời rạc không nối với nhau):
@@ -26,7 +26,7 @@ void rand_graph ( ) {
 	//Tìm ngẫu nhiên vị trí trong ma trận (tìm các đỉnh để nối với nhau):
 	for ( i = 0; i < ver; i++ ) {
 		for ( j = i + 1; j < ver; j++ ) {
-			if ( prob ( ) < density ) { //density càng lớn thì càng nhiều đỉnh được nối
+			if ( prob () < density ) { //density càng lớn thì càng nhiều đỉnh được nối
 				adj_mat[i][j] = 1;
 				adj_mat[j][i] = 1;
 				edge_count++;
@@ -37,7 +37,7 @@ void rand_graph ( ) {
 }
 
 //Đọc ma trận kề từ file
-void read_adj_mat ( ) {
+void read_adj_mat () {
 	ifstream FileIn;
 	FileIn.open ( "graph.dat", ios_base::in );
 	FileIn >> ver; //Nhận số đỉnh
@@ -47,12 +47,12 @@ void read_adj_mat ( ) {
 		for ( j = 1; j <= ver; j++ )
 			FileIn >> adj_mat[i][j];
 	}
-	FileIn.close ( );
+	FileIn.close ();
 	cout << "Read adjacency matrix from a file: \n\n";
 }
 
 //In ra ma trận kề vừa Đọc / Tạo
-void dis_adj_mat ( ) {
+void dis_adj_mat () {
 	for ( i = 1; i <= ver; i++ ) {
 		for ( j = 1; j <= ver; j++ )
 			cout << adj_mat[i][j] << " ";
@@ -70,7 +70,7 @@ void DFS_dequi ( int node ) {
 	}
 }
 
-//DFS sử dụng ngăn xếp (khử đệ quy):
+//DFS sử dụng Array (khử đệ quy):
 void DFS_arr ( int node ) {
 	int stack0[100], // Khởi tạo stack rỗng
 		index = 1, // 1st stack element 
@@ -96,7 +96,7 @@ void DFS_arr ( int node ) {
 	}
 }
 
-int main ( ) {
+int main () {
 	//Menu:
 	cout << "Options:\n\n";
 	cout << "0 - Read From File \n\n1 - Random Graph\n\nYour option: ";
@@ -106,9 +106,9 @@ int main ( ) {
 	if ( option == 1 ) {
 		cout << "Vertex = "; cin >> ver;
 		cout << "Density = "; cin >> density;
-		rand_graph ( );
+		rand_graph ();
 	} else if ( option == 0 ) {
-		read_adj_mat ( );
+		read_adj_mat ();
 	} else {
 		cout << "Invalid option\n";
 		system ( "pause" );
@@ -116,7 +116,7 @@ int main ( ) {
 	}
 
 	//In ra ma trận kề vừa Đọc (or) Tạo: 
-	dis_adj_mat ( );
+	dis_adj_mat ();
 
 	//ban đầu gán tất cả là chưa xét:
 	for ( int i = 1; i <= ver; i++ ) {
