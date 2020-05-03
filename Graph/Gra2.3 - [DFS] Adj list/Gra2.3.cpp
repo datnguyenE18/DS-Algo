@@ -2,9 +2,9 @@
 using namespace std;
 
 int ver,
-visited[100],
-node,
-i, j;
+	visited[100],
+	node,
+	i, j;
 double density;
 vector<int> adj_list[100];
 
@@ -53,6 +53,30 @@ void DFS_dequi ( int node ) {
 	}
 }
 
+//Duyệt theo ngăn xếp:
+void DFS_stack ( int node ) {
+	int stack0[100];
+	cout << node << " ";
+	visited[node] = 1;
+	int index = 1, s;
+	stack0[index] = node;
+	while ( index > 0 ) {
+		s = stack0[index];   //gan s = phan tu dau ngan xep
+		index--;
+		for ( int i = 0; i < adj_list[s].size (); i++ ) {
+			if ( visited[adj_list[s][i]] == 0 ) {    // voi moi phan tu thuoc mang k[i] chua xet    
+				cout << adj_list[s][i] << " ";  // in ra phan tu do
+				visited[adj_list[s][i]] = 1;
+				index++;
+				stack0[index] = s;            // gan lai s de sau do co the duyet lai
+				index++;
+				stack0[index] = adj_list[s][i];      //gan phan tu thoa man la phan tu dau ngan xep
+				break;
+			}
+		}
+	}
+}
+
 int main () {
 	cout << "Vertex = "; cin >> ver;
 	cout << "Density = "; cin >> density;
@@ -74,6 +98,16 @@ int main () {
 	// Duyệt đệ quy:
 	cout << "\nDFS_dequi(" << node << ") : ";
 	DFS_dequi ( node );
+	cout << "\n";
+
+	//Khởi tạo lại tất cả visited[i] là chưa xét:
+	for ( i = 1; i <= ver; i++ ) {
+		visited[i] = 0;
+	}
+
+	//Duyệt stack:
+	cout << "\nDFS_stack(" << node << ") : ";
+	DFS_stack ( node );
 	cout << "\n";
 
 	return 0;
@@ -110,4 +144,6 @@ Adj{20} ={1,12,13,14,16,19}
 node = 1
 
 DFS_dequi(1) : 1 2 3 12 4 10 11 7 9 14 20 13 17 19 6 8 15 5 16 18
+
+DFS_stack(1) : 1 2 3 12 4 10 11 7 9 14 20 13 17 19 6 8 15 5 16 18
 */
