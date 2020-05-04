@@ -1,50 +1,39 @@
-﻿#include<bits/stdc++.h>
+﻿#include <bits/stdc++.h>
 using namespace std;
-#define MAX 100
 
-void Result ( int A[], int n ) {
+void Display ( int a[], int n ) {
 	cout << "[";
 	for ( int i = 0; i < n; i++ ) {
-		if ( i == n - 1 ) cout << A[i];
-		else cout << A[i] << " ";
+		if ( i == 0 ) cout << a[i];
+		else cout << " " << a[i];
 	}
-	cout << "]\n";
+	cout << "]" << endl;
 }
 
-void Triangle ( int A[], int n ) {
-	if ( n < 1 )
-		return;
-	int temp[n - 1];
-	for ( int i = 0; i < n - 1; i++ ) {
-		int x = A[i] + A[i + 1];
-		temp[i] = x;
-	}
-	Triangle ( temp, n - 1 );
-	Result ( A, n );
+void Try ( int a[], int n ) {
+	int b[1000];
+	if ( n < 2 ) return;
+	for ( int i = 0; i < n - 1; i++ )
+		b[i] = a[i] + a[i + 1];
+	Display ( b, n - 1 );
+	Try ( b, n - 1 );
 }
 
-void Triangle1 ( int A[], int n ) {
-	if ( n < 1 ) return;
-	else {
-		Result ( A, n ); int temp[n - 1];
-		for ( int i = 0; i < n - 1; i++ ) {
-			int x = A[i] + A[i + 1];
-			temp[i] = x;
-		}
-		Triangle1 ( temp, n - 1 );
-	}
+void Solve () {
+	int n; cin >> n;
+	int a[n + 5];
+	for ( int i = 0; i < n; i++ )
+		cin >> a[i];
+	Display ( a, n );
+	Try ( a, n );
 }
 
-int main ( ) {
-	int T, A[MAX], n; cin >> T;
-	while ( T-- ) {
-		cin >> n;
-		for ( int i = 0; i < n; i++ )
-			cin >> A[i];
-		Triangle1 ( A, n );
-	}
+int main () {
+	int T;	cin >> T;
+	while ( T-- )
+		Solve ();
+	return 0;
 }
-
 /*
 1
 5
@@ -55,5 +44,3 @@ int main ( ) {
 [20 28]
 [48]
 */
-
-
