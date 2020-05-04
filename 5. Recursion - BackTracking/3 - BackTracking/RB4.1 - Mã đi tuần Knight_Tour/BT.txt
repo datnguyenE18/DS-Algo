@@ -1,0 +1,5 @@
+Mã đi tuần. Trên bàn cờ kích cỡ N * N, hãy tìm một hành trình của quân mã
+đi qua tất cả các ô trên bàn cờ mỗi ô đúng một lần.
+
+Gọi dx[8] = {2, 1, -1, -2, -2, -1, 1, 2} là vector dịch chuyển theo hang
+Gọi dy[8] = {1, 2, 2, 1, -1, -2, -2, 1} là vector dịch chuyển theo cột
