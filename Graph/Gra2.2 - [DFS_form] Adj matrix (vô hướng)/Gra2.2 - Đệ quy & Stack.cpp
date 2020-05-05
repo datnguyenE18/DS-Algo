@@ -146,15 +146,11 @@ int main () {
 
 /*
 Options:
-
 0 - Read From File
-
 1 - Random Graph
-
 Your option: 0
 ------------------------------------------------------------
 Read adjacency matrix from a file:
-
 0 1 1 0 0 0 0 0 0 0 1 0 0
 1 0 0 1 0 1 0 0 0 0 0 0 0
 1 0 0 1 0 0 0 0 0 0 0 0 0
@@ -168,10 +164,7 @@ Read adjacency matrix from a file:
 1 0 0 0 0 0 0 0 0 0 0 1 1
 0 0 0 0 0 0 0 0 0 0 1 0 1
 0 0 0 0 0 0 0 0 1 0 1 1 0
-
 node = 1
-
 DFS_dequi(1) : 1 2 4 3 6 7 8 10 5 9 13 11 12
-
 DFS_arr(1) : 1 2 4 3 6 7 8 10 5 9 13 11 12
 */
