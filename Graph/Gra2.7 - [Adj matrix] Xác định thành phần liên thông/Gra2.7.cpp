@@ -87,7 +87,7 @@ void conComp() {
 			BFS(i);
 		}
 	}
-	cout << "=> Number of connected components is: " << count << "\n";
+	cout << "=> Number of connected components: " << count << "\n";
 }
 
 int main() {

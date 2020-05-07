@@ -1,0 +1,1 @@
+Viết chương trình C/C++ tạo ngẫu nhiên một Danh sách cạnh có N đỉnh và tỷ lệ Density nhập từ bàn phím. In ra danh sách cạnh đó sau đó liệt kê ra các thành phần liên thông và cho biết số thành phần liên thông đó.
