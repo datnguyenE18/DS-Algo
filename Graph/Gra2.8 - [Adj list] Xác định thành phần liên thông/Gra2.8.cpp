@@ -46,24 +46,48 @@ void dis_adj_list() {
 	} cout << "\n";
 }
 
-//Duyệt theo queue:
+//Duyệt BFS theo queue:
 void BFS_queue(int node) {
 	queue<int>queue0;
 	queue0.push(node);
 	visited[node] = true;
 
 	while ( !queue0.empty() ) {
-		int s = queue0.front();
+		node = queue0.front();
 		queue0.pop();
-		cout << s << " ";
-		for ( int i = 0; i < adj_list[s].size(); i++ ) {
-			if ( visited[adj_list[s][i]] == 0 ) {
-				queue0.push(adj_list[s][i]);
-				visited[adj_list[s][i]] = true;
+		cout << node << " ";
+		for ( int i = 0; i < adj_list[node].size(); i++ ) {
+			if ( visited[adj_list[node][i]] == 0 ) {
+				queue0.push(adj_list[node][i]);
+				visited[adj_list[node][i]] = true;
 			}
 		}
 	}
 }
+
+//Duyệt DFS theo stack:
+void DFS_stack(int node) {
+	stack<int> stack0;
+	cout << node << " ";
+	visited[node] = true;
+	stack0.push(node);
+
+	while ( !stack0.empty() ) {
+		node = stack0.top();
+		stack0.pop();
+
+		for ( int i = 0; i < adj_list[node].size(); i++ ) {
+			if ( visited[adj_list[node][i]] == false ) {
+				cout << adj_list[node][i] << " ";
+				visited[adj_list[node][i]] = true;
+				stack0.push(node);
+				stack0.push(adj_list[node][i]);
+				break;
+			}
+		}
+	}
+}
+
 
 void conComp() {
 	int count = 0;
@@ -72,6 +96,7 @@ void conComp() {
 			count++;
 			cout << " * Connected component " << count << ": ";
 			BFS_queue(i);
+			//DFS_stack(i);
 		}
 	}
 	cout << "\n=> Number of connected components: " << count << "\n";
