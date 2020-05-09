@@ -78,7 +78,7 @@ void BFS_queue(int node) {
 		for ( int i = 1; i <= ver; i++ ) {
 			if ( adj_mat[node][i] && visited[i] == false ) {
 				queue0.push(i);
-				previous[i] = node;
+				previous[i] = node; //Lớp trên 'node' là lớp của 'i'
 				visited[i] = true;
 			}
 		}
@@ -100,7 +100,7 @@ void findPath() {
 		int temp = previous[end_ver]; //Truy vết từ end_ver lên đầu 
 		while ( temp != start_ver ) {
 			cout << " <- " << temp;
-			temp = previous[temp];
+			temp = previous[temp]; //truy ngược lên trên
 		}
 		cout << " <- " << start_ver << "\n";
 	}
