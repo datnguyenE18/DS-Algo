@@ -1,0 +1,8 @@
+Bài toán: Cho đồ thị G=(V, E). Trong đó V là tập đỉnh, E là tập cạnh của đồ thị. Hãy tìm đường đi từ đỉnh start_ver ∈ V tới đỉnh end_ver ∈ V.
+
+Thủ tục BFS(s) hoặc DFS(s) cho phép ta duyệt các đỉnh cùng một thành phần liên thông với start_ver. Như vậy, nếu trong số các đỉnh liên thông với start_ver chứa end_ver thì chắc chắn có đường đi từ start_ver đến end_ver. Nếu trong số các đỉnh liên thông với start_ver không chứa end_ver thì không tồn tại đường đi từ start_ver đến end_ver. Do vậy, chúng ta chỉ cần gọi tới thủ tục DFS(s) hoặc BFS(s) và kiểm tra xem đỉnh end_ver có thuộc thành phần liên thông với start_ver hay không. Điều này được thực hiện đơn giản thông qua mảng trạng thái visited[]. Nếu visited[t] = true thì có nghĩa end_ver cùng thành phần liên thông với start_ver. Ngược lại visited[t] = false thì end_ver không cùng thành phần liên thông với start_ver.
+
+Để ghi nhận đường đi từ start_ver đến end_ver, ta sử dụng một mảng previous[] thiết lập giá trị ban đầu là 0.Trong quá trình duyệt, ta thay thế giá trị của previous[v] để ghi nhận đỉnh đi trước đỉnh v trong đường đi tìm kiếm từ start_ver đến end_ver.
+
+* start_ver: Đỉnh đầu  
+* end_ver: Đỉnh đích
