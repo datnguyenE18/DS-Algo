@@ -1,0 +1,7 @@
++ Khi thực hiện duyệt đồ thị theo chiều rộng, các đỉnh được duyệt sẽ phân thành các lớp, các đỉnh trong mỗi lớp đều có cùng khoảng cách tới đỉnh xuất phát.
+
++ Các đỉnh nằm ở lớp lớn hơn không thể có cách duyệt để nằm ở lớp bé hơn vì từ lớp trước sẽ duyệt được tất cả các đỉnh nằm ở lớp sau.
+=> Khoảng cách giữa đỉnh bắt đầu và đỉnh bất kì trong đồ thi khi su dụng phương pháp duyệt BFS là đường đi ngắn nhất (có tổng số cạnh nhỏ nhất)
+
++ Mỗi đỉnh được cập nhật vào hàng đợi theo 1 đỉnh khác ở lớp trước đó
+=> Ta có thể tu đỉnh đích dần lần vết về để in ra đường đi ngắn nhất giữa hai đỉnh cho trước.
