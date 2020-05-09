@@ -1,0 +1,2 @@
+Mỗi phương pháp có 1 tính chất khác nhau, tùy từng bài toán dùng BFS hoặc DFS cho ta độ phức tạp thuật khác và bộ nhớ khác nhau
+DFS thường áp dung cho bài toán tìm thành phần liên thông, còn BFS thường cho tìm đường đi ngắn nhất
