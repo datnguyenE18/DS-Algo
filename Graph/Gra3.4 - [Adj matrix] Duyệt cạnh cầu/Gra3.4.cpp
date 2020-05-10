@@ -3,7 +3,7 @@ using namespace std;
 #define MAX 1001
 
 int ver,
-	adj_mat[MAX][MAX];
+adj_mat[MAX][MAX];
 bool visited[MAX];
 
 void Reinit() {
@@ -75,30 +75,38 @@ int DFS(int node) {
 	return count0;
 }
 
-void Finding_Cut_Vertices() {
-	vector<int> res;
-
+void Finding_Bridges() {
+	vector<vector<int>> res;
 	for ( int i = 1; i <= ver; i++ ) {
-		visited[i] = true;
-		if ( i == 1 && DFS(2) != ver - 1 ) //BFS(2)
-			res.push_back(i);
-		else if ( i != 1 && DFS(1) != ver - 1 ) //BFS(1)
-			res.push_back(i);
-		Reinit();
+		for ( int j = 1; j <= ver; j++ ) {
+			if ( adj_mat[i][j] == 1 ) {
+				adj_mat[i][j] = adj_mat[j][i] = 0; //loại cạnh nối i với j ra khỏi tập cạnh để thực hiện DFS/BFS các cạnh còn lại
+				if ( DFS(1) != ver ) {
+					vector<int> temp;
+					temp.push_back(i);
+					temp.push_back(j);
+					res.push_back(temp); //lưu 2 đỉnh của cạnh vào hàng của res
+				}
+				Reinit();
+				adj_mat[i][j] = 1; //Khôi phục lại cạnh đã bỏ ở trên, nhưng chỉ khôi phục một vế để tránh kết quả lưu lại hai lần cạnh (a b) và (b a) 
+			}
+		}
 	}
-
-	cout << "\nAll cut vertices of Graph: ";
+	cout << "\nAll bridges: ";
 	if ( !res.empty() ) {
-		for ( int i = 0; i < res.size(); i++ )
-			cout << res[i] << " ";
-		cout << endl;
+		for ( int i = 0; i < res.size(); i++ ) {
+			cout << "( ";
+			for ( int j = 0; j < res[i].size(); j++ )
+				cout << res[i][j] << " ";
+			cout << ") ";
+		}
 	} else cout << "(empty)\n";
 }
 
 int main() {
 	read_adj_mat();
 	dis_adj_mat();
-	Finding_Cut_Vertices();
+	Finding_Bridges();
 }
 
 /*
@@ -118,5 +126,5 @@ Read adjacency matrix from a file:
 0 0 0 0 0 0 0 0 0 1 1 0 1
 0 0 0 0 0 0 0 0 0 1 1 1 0
 
-All cut vertices of Graph: 3 5 9 10
+All bridges: ( 3 5 ) ( 9 10 )
 */
