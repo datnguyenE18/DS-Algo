@@ -115,7 +115,7 @@ int main () {
 	cout << "\nnode = "; cin >> node;
 
 	// Duyệt hàng đợi:
-	cout << "\nBFT_queue(" << node << ") : ";
+	cout << "\nBFS_queue(" << node << ") : ";
 	BFS_queue ( node );
 	cout << "\n";
 
