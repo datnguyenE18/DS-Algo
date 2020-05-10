@@ -18,14 +18,14 @@ void rand_graph () {
 	int edge_count = 0;
 
 	//Ban đầu tạo ma trận ver đỉnh chỉ chứa 0 (Tức các đỉnh rời rạc không nối với nhau):
-	for ( i = 0; i < ver; i++ ) {
-		for ( j = 0; j < ver; j++ )
+	for ( i = 1; i <= ver; i++ ) {
+		for ( j = 1; j <= ver; j++ )
 			adj_mat[i][j] = 0;
 	}
 
 	//Tìm ngẫu nhiên vị trí trong ma trận (tìm các đỉnh để nối với nhau):
-	for ( i = 0; i < ver; i++ ) {
-		for ( j = i + 1; j < ver; j++ ) {
+	for ( i = 1; i <= ver; i++ ) {
+		for ( j = i + 1; j <= ver; j++ ) {
 			if ( prob () < density ) { //density càng lớn thì càng nhiều đỉnh được nối
 				adj_mat[i][j] = 1;
 				adj_mat[j][i] = 1;
