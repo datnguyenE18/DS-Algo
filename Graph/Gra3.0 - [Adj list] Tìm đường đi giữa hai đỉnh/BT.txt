@@ -1,0 +1,5 @@
+Write a C/C++ programc++, in ra a path between a pair of vertices (s,t) (input from command line ) having a direction from s to t , with an input as adjacent list of a random graph (N=20, density = 0.15) using:
+
+- BFS
+
+- DFS
