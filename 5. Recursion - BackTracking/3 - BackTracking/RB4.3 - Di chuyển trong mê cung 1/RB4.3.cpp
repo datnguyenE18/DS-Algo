@@ -11,7 +11,8 @@ string res; // Lưu đường đi
 
 // Khởi tạo ma trận, đếm và visited:
 void init() {
-	count0 = 0;  
+	cin >> square;
+	count0 = 0;
 	for ( i = 1; i <= square; i++ ) {
 		for ( j = 1; j <= square; j++ ) {
 			visited[i][j] = false;
@@ -22,7 +23,7 @@ void init() {
 
 //Kiểm tra tọa độ (x, y) có thuộc mê cung không và bên dưới / bên phải có đi được không
 bool isSafe(int x, int y) {
-	if ( x >= 1 && x <= square && y >= 1 && y <= square && mat[x][y] == 1 )
+	if ( x >= 1 && x <= square && y >= 1 && y <= square && !visited[x][y] && mat[x][y] == 1 )
 		return true;
 	return false;
 }
@@ -62,7 +63,6 @@ void showPath(int x, int y) {
 int main() {
 	int t; cin >> t;
 	while ( t-- ) {
-		cin >> square;
 		init();
 		showPath(1, 1);
 		if ( count0 == 0 ) cout << "-1"; //Nếu không có cách đi nào thì in ra '-1'
