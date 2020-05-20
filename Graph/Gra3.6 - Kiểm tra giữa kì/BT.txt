@@ -1,0 +1,13 @@
+Viết chương trình C/C++ thực hiện lại các hàm xử lý đồ thị vô hướng đọc từ file thông qua ma trận kề đã học ở 3 chương đầu, gồm có:
+
++) Duyệt đồ thị với DFS & BFS
+
++) Xác định thành phần liên thông
+
++) Tìm đường đi giữa các đỉnh
+
++) Kiểm tra tính liên thông mạnh / yếu của đồ thị
+
++) Tìm các đỉnh trụ
+
++) Tìm các cạnh cầu  
