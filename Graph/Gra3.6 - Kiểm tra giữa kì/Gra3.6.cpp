@@ -3,10 +3,10 @@ using namespace std;
 #define MAX 1001
 
 int ver,
-adj_mat[MAX][MAX],
-node,
-Pre[MAX],
-count0;
+	adj_mat[MAX][MAX],
+	node,
+	Pre[MAX],
+	count0;
 bool visited[MAX];
 double density;
 
