@@ -1,41 +1,43 @@
-﻿/*
-**Next_subset
-*/
-
-#include<bits/stdc++.h>
+﻿#include<bits/stdc++.h>
+#define MAX 1001
 using namespace std;
 
-int t, n, k;
-int x[111111];
+int n, k, num[MAX];
 
-void Input () { // nhập cấu hình ban đầu
-	for ( int i = 1; i <= k; i++ ) cin >> x[i];
+// Khởi tạo:
+void init() {
+	cin >> n >> k;
+	for ( int i = 1; i <= k; i++ )
+		cin >> num[i];
 }
 
-void next_Subset () {
-	int i = k; // duyệt từ cuối lên của tập con hiện tại
-	while ( i > 0 && x[i] == n - k + i ) i--; // tìm i sao cho x[i] khác n - k + i
-
-	if ( i > 0 ) { // nếu tìm thấy i
-		x[i] = x[i] + 1; // tăng x[i] lên một đơn vị
-		for ( int j = i + 1; j <= k; j++ )  // từ đó về sau mỗi phần tử tăng thêm (j - i) đơn vị
-			x[j] = x[i] + j - i;
-	} else { // nếu không tìm thấy i => cấu hính cuối
-		for ( i = 1; i <= k; i++ ) x[i] = i; // thì trả về cấu hình đầu tiên
+//Hàm sinh tập con kế tiếp:
+void next_Subset() {
+	for ( int i = k; i > 0; i-- ) { //Duyệt từ cuối lên
+		if ( num[i] == n - k + i ) continue; // tìm i sao cho num[i] khác n - k + i
+		else { //Nếu tìm thấy i
+			num[i] += 1; //thì tăng giá trị num[i] lên 1 đơn vị
+			for ( int j = i + 1; j <= k; j++ ) //Từ vị trí tiếp đó về cuối
+				num[j] = num[i] + j - i; //mỗi vị trí tăng giá trị lên (j - i) đơn vị
+			return;
+		}
 	}
+	for ( int i = 1; i <= k; i++ )  // Nếu không tìm thấy i => cấu hình cuối
+		num[i] = i; // thì trả về cấu hình đầu tiên
 }
 
-void Output () { //in ra cấu hình hiện tại
-	for ( int i = 1; i <= k; i++ ) cout << x[i] << " ";
+// In ra cấu hình hiện tại:
+void display() {
+	for ( int i = 1; i <= k; i++ )
+		cout << num[i] << " ";
 	cout << endl;
 }
 
-int main () {
-	cin >> t;
+int main() {
+	int t; cin >> t;
 	while ( t-- ) {
-		cin >> n >> k;
-		Input ();
-		next_Subset ();
-		Output ();
-	} system ( "pause" );
+		init();
+		next_Subset();
+		display();
+	}
 }
