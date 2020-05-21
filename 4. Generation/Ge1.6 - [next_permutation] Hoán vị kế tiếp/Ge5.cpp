@@ -1,28 +1,26 @@
-﻿/*
-**next_permutation
-*/
-
-#include<bits/stdc++.h>
+﻿#include<bits/stdc++.h>
+#define MAX 1001
 using namespace std;
 
-int t, n;
-int x[111111];
+int n, num[MAX];
 
-void input () {
-	for ( int i = 0; i < n; i++ ) cin >> x[i];
+void init() {
+	cin >> n;
+	for ( int i = 0; i < n; i++ )
+		cin >> num[i];
 }
 
-void output () {
-	for ( int i = 0; i < n; i++ ) cout << x[i] << " ";
-	cout << "\n";
+void display() {
+	for ( int i = 0; i < n; i++ )
+		cout << num[i] << " ";
+	cout << endl;
 }
 
-int main () {
-	cin >> t;
+int main() {
+	int t; cin >> t;
 	while ( t-- ) {
-		cin >> n;
-		input ();
-		next_permutation ( x, x + n );
-		output ();
-	} system ( "pause" );
+		init();
+		next_permutation(num, num + n);
+		display();
+	}
 }
