@@ -1,30 +1,26 @@
 ﻿/*
-**Next Bits String
+**Next_binary_strings
 */
 
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
-int t;
-string num;
-
-void solve () {
-	int i = num.size () - 1;
-	for ( ; i >= 0; i-- ) {
-		if ( num[i] == '1' ) num[i] = '0';
+void nextBit(string bit) {
+	for ( int i = bit.length() - 1; i >= 0; i-- ) {
+		if ( bit[i] == '1' ) bit[i] = '0';
 		else {
-			num[i] = '1';
-			cout << num << endl;
-			return;
+			bit[i] = '1';
+			break;
 		}
-		if ( i == 0 ) cout << num << endl;
 	}
+	cout << bit << endl;
 }
 
-int main () {
-	cin >> t;
+int main() {
+	int t; cin >> t;
+	string bit;
 	while ( t-- ) {
-		cin >> num;
-		solve ();
-	} system ( "pause" );
+		cin >> bit;
+		nextBit(bit);
+	}
 }

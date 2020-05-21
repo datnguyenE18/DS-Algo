@@ -6,23 +6,22 @@
 using namespace std;
 #define MAX 11111
 
-int t;
-char x[MAX];
+char bit[MAX];
 
-void Next_Bits_String () {
-	int n = strlen ( x );
+void Next_Bits_String() {
+	int n = strlen(bit);
 	int i = n - 1;
-	for ( ; i >= 0 && x[i] == '1'; i-- ) {
-		x[i] = '0';
+	for ( ; i >= 0 && bit[i] == '1'; i-- ) {
+		bit[i] = '0';
 	}
-	if ( i >= 0 ) x[i] = '1';
+	if ( i >= 0 ) bit[i] = '1';
 }
 
-int main () {
-	cin >> t;
+int main() {
+	int t; cin >> t;
 	while ( t-- ) {
-		cin >> x;
-		Next_Bits_String ();
-		cout << x << endl;
-	} system ( "pause" );
+		cin >> bit;
+		Next_Bits_String();
+		cout << bit << endl;
+	}
 }
