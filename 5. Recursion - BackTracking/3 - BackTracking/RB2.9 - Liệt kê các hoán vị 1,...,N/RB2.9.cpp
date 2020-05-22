@@ -1,32 +1,35 @@
 ﻿#include<bits/stdc++.h>
+#define MAX 11
 using namespace std;
 
-int n, X[20];
-bool chuaxet[21];
+int n, num[MAX];
+bool chuaxet[MAX];
 
-void display () {
-	for ( int vt = 1; vt <= n; vt++ ) {
-		cout << X[vt];
-	} cout << " ";
+void display() {
+	for ( int vt = 1; vt <= n; vt++ ) // vt: vị trí
+		cout << num[vt];
+	cout << " ";
 }
 
-void qlHoanVi ( int vt ) {
-	for ( int gt = 1; gt <= n; gt++ ) {
+void Try(int vt) {
+	for ( int gt = 1; gt <= n; gt++ ) { //gt: giá trị
 		if ( chuaxet[gt] ) {
-			X[vt] = gt; chuaxet[gt] = false;
-			if ( vt == n ) display ();
-			else qlHoanVi ( vt + 1 );
+			num[vt] = gt;
+			chuaxet[gt] = false;
+			if ( vt == n )
+				display();
+			else Try(vt + 1);
 			chuaxet[gt] = true;
 		}
 	}
 }
 
-int main () {
+int main() {
 	int t; cin >> t;
 	while ( t-- ) {
-		memset ( chuaxet, true, 21 );
+		memset(chuaxet, true, MAX);
 		cin >> n;
-		qlHoanVi ( 1 );
-		cout << "\n";
-	} system ( "pause" );
+		Try(1);
+		cout << endl;
+	}
 }
