@@ -22,6 +22,7 @@ void Try(int i) {
 int main() {
 	int t; cin >> t;
 	while ( t-- ) {
+		num[0] = 0;
 		cin >> n >> k;
 		Try(1);
 		cout << "\n";
