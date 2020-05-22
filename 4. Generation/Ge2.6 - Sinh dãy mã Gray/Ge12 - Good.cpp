@@ -6,18 +6,18 @@ class Gray {
 	long n;
 	int A[65538];
 	public:
-	void nhap ();
-	void xuat ();
+	void nhap();
+	void xuat();
 
 };
 
-void Gray::xuat () {
+void Gray::xuat() {
 	int b[20];
 
-	for ( int i = 0; i<n; i++ ) {
+	for ( int i = 0; i < n; i++ ) {
 		int k = 0;
 		int u = A[i];
-		while ( u>0 ) {
+		while ( u > 0 ) {
 			b[k++] = u % 2;
 			u /= 2;
 		}
@@ -28,7 +28,7 @@ void Gray::xuat () {
 
 }
 
-void Gray::nhap () {
+void Gray::nhap() {
 	cin >> m;
 	A[0] = 0;
 	A[1] = 1;
@@ -42,13 +42,12 @@ void Gray::nhap () {
 	}
 }
 
-int main () {
+int main() {
 	int t; cin >> t;
 	Gray G;
 	while ( t-- ) {
-		G.nhap ();
-		G.xuat ();
+		G.nhap();
+		G.xuat();
 		cout << "\n";
-	} system ( "pause" );
-
+	}
 }
