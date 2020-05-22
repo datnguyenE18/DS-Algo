@@ -11,10 +11,10 @@ void display() {
 }
 
 void Try(int i) {
-	for ( int j = num[i - 1] + 1; j <= n - k + i; j++ ) {
-		num[i] = j;
-		if ( i == k ) {
-			display();
+	for ( int j = num[i - 1] + 1; j <= n - k + i; j++ ) { //mọi giá trị V mà có thể gán cho phần tử x[i] đang xét
+		num[i] = j; //Thử gán x[i] = V
+		if ( i == k ) { //Nếu x[i] là phần tử kết thúc cấu hình
+			display(); //In ra cấu hình
 		} else Try(i + 1);
 	}
 }
