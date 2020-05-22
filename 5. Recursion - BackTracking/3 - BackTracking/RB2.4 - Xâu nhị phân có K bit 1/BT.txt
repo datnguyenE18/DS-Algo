@@ -1,9 +1,9 @@
 Hãy in ra tất cả các xâu nhị phân độ dài N, có K bit 1 theo thứ tự từ điển tăng dần.
 
-Input: Dòng đầu tiên là số lượng bộ test T (T ≤ 20). Mỗi test gồm 2 số nguyên N, K (1 ≤ K ≤ N ≤
-16).
+Input: Dòng đầu tiên là số lượng bộ test T (T ≤ 20). Mỗi test gồm 2 số nguyên N, K (1 ≤ K ≤ N ≤ 16).
 
 Output: Với mỗi test, in ra đáp án tìm được, mỗi xâu in ra trên một dòng.
+
 Ví dụ:
 
 Input			Output
