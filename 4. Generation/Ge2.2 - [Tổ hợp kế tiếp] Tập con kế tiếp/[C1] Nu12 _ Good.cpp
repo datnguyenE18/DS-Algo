@@ -16,7 +16,7 @@ void next_Subset() {
 	for ( int i = k; i > 0; i-- ) { //Duyệt từ cuối lên
 		if ( num[i] == n - k + i ) continue; // tìm i sao cho num[i] khác n - k + i
 		else { //Nếu tìm thấy i
-			num[i] += 1; //thì tăng giá trị num[i] lên 1 đơn vị
+			num[i] ++; //thì tăng giá trị num[i] lên 1 đơn vị
 			for ( int j = i + 1; j <= k; j++ ) //Từ vị trí tiếp đó về cuối
 				num[j] = num[i] + j - i; //mỗi vị trí tăng giá trị lên (j - i) đơn vị
 			return;
