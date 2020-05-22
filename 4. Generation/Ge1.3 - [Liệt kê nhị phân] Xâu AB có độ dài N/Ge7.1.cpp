@@ -1,36 +1,44 @@
-﻿#include<iostream>
+﻿/*
+**Generate all the binary strings of N bits
+*/
+
+#include<bits/stdc++.h>
 using namespace std;
+#define MAX 11111
 
-int n;
-char a[11];
-bool check; // tạo 1 biến kiểu bool để kiểm tra xem đã đến cấu hình cuối chưa
+int t, n;
+char x[MAX];
+bool check;
 
-void display () {  // hiển thị cấu hình ra màn hình
-	for ( int i = 1; i <= n; i++ ) cout << a[i];
+
+//First configuration
+void first_conf () {
+	for ( int i = 0; i < n; i++ ) x[i] = 'A';
+}
+
+//Next Bit Strings
+void next_confs () {
+	int i = n - 1;
+	for ( ; i >= 0 && x[i] == 'B'; i-- )  x[i] = 'A';
+	if ( i >= 0 ) x[i] = 'B';
+	else check = false;
+}
+
+//Print configuration
+void display () {
+	for ( int i = 0; i < n; i++ ) cout << x[i];
 	cout << " ";
 }
 
-void nextString () {
-	int i = n;
-	while ( a[i] == 'B' && i > 0 ) 	i--;
-	if ( i == 0 ) check = true; // nếu i=0 tức là đã đến cấu hình cuối, gán biến check = true
-	else {
-		a[i] = 'B';    // còn không thì gán a[i] = B
-		for ( int j = i + 1; j <= n; j++ ) a[j] = 'A';   // gán tất cả phần tử phía sau a[i] = A
-	}
-}
-
 int main () {
-	int t; cin >> t;
-
+	cin >> t;
 	while ( t-- ) {
-		check = false;
+		check = true;
 		cin >> n;
-		for ( int i = 1; i <= n; i++ ) a[i] = 'A';    // cấu hình đầu tiên gồm toàn chữ A
-
-		while ( !check ) {
-			display ();       // hiển thị cấu hình
-			nextString ();      // sinh cấu hình tiếp theo
+		first_conf ();
+		while ( check ) {
+			display ();
+			next_confs ();
 		} cout << "\n";
 	} system ( "pause" );
 }
