@@ -2,18 +2,18 @@
 using namespace std;
 
 bool check = false;
-int n, k, count = 0; //count là biến đếm kết quả.
+int n, k, count0 = 0; //count0 là biến đếm kết quả.
 char a[17];
 string s[1000000]; //chứa các dãy thỏa mãn
 
 //cấu hình ban đầu
-void init () {
+void init() {
 	for ( int i = 1; i <= n; i++ )
 		a[i] = 'A';
 }
 
 //Kiểm tra tính hợp lệ của chuỗi
-bool kt () {
+bool kt() {
 	int d = 0, t = 1;
 	for ( int i = 1; i < n; i++ ) {
 		if ( a[i] == 'A' && a[i + 1] == 'A' ) {
@@ -27,16 +27,16 @@ bool kt () {
 }
 
 //Lưu chuỗi hợp lệ
-void dem () {
-	if ( kt () ) {
-		s[count] = "";
+void dem() {
+	if ( kt() ) {
+		s[count0] = "";
 		for ( int i = 1; i <= n; i++ )
-			s[count] += a[i];
-		count++;
+			s[count0] += a[i];
+		count0++;
 	}
 }
 
-void sinh () {
+void sinh() {
 	int i = n;
 	while ( a[i] == 'B' ) {
 		a[i] = 'A';
@@ -46,15 +46,14 @@ void sinh () {
 	else a[i] = 'B';
 }
 
-int main () {
+int main() {
 	cin >> n >> k;
-	init ();
+	init();
 	while ( !check ) {
-		sinh ();
-		dem ();
+		sinh();
+		dem();
 	}
-	cout << count << endl;
-	for ( int i = 0; i < count; i++ ) {
+	cout << count0 << endl;
+	for ( int i = 0; i < count0; i++ )
 		cout << s[i] << endl;
-	} system ( "pause" );
 }
