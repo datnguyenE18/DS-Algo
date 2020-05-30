@@ -3,12 +3,13 @@ using namespace std;
 #define MAX 1001
 
 int N,  // Số ô vuông
-	mat[MAX][MAX]; // ma trận 2 chiều lưu 
+mat[MAX][MAX]; // ma trận 2 chiều lưu 
 vector<string> vt;
 string ans;
 
 void init() {
 	cin >> N;
+	vt.clear();
 	for ( int i = 1; i <= N; i++ ) {
 		for ( int j = 1; j <= N; j++ )
 			cin >> mat[i][j];
@@ -52,3 +53,19 @@ int main() {
 		showPath();
 	}
 }
+/*
+2
+4
+1 0 0 0
+1 1 0 1
+0 1 0 0
+1 1 1 1
+DRDDRR
+5
+1 0 0 0 0
+1 1 1 1 1
+1 1 0 0 1
+0 1 1 1 1
+0 0 0 1 1
+DDRDRRDR DDRDRRRD DRDDRRDR DRDDRRRD DRRRRDDD
+*/
