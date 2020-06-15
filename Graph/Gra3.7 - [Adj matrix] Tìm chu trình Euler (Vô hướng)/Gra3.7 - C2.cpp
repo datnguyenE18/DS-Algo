@@ -79,7 +79,7 @@ int BFS(int node) {
 bool check() {
 	for ( int i = 1; i <= ver; i++ ) visited[i] = false;
 
-	if ( /*BFS(1)*/ BFS(1) != ver ) return false;
+	if ( /*BFS(1)*/ DFS(1) != ver ) return false;
 	for ( int i = 1; i <= ver; i++ ) {
 		int sum = 0;
 		for ( int j = 1; j <= ver; j++ )
