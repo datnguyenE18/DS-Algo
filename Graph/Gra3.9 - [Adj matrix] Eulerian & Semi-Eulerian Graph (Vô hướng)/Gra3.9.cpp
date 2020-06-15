@@ -41,7 +41,7 @@ int DFS(int node) {
 		stack0.pop();
 
 		for ( int i = 1; i <= ver; i++ ) {
-			if ( adj_mat[node][i] == 1 && visited[i] == false ) {
+			if ( adj_mat[node][i] != 0 && visited[i] == false ) {
 				count0++;
 				visited[i] = true;
 				stack0.push(node);
@@ -65,7 +65,7 @@ int BFS(int node) {
 		queue0.pop();
 
 		for ( int t = 1; t <= ver; t++ ) {
-			if ( visited[t] == false && adj_mat[node][t] == 1 ) {
+			if ( visited[t] == false && adj_mat[node][t] != 0 ) {
 				count0++;
 				queue0.push(t);
 				visited[t] = true;
@@ -82,8 +82,10 @@ bool check() {
 	count0 = 0;
 	for ( int i = 1; i <= ver; i++ ) {
 		int sum = 0;
-		for ( int j = 1; j <= ver; j++ )
-			sum += adj_mat[i][j];
+		for ( int j = 1; j <= ver; j++ ) {
+			if ( adj_mat[i][j] != 0 )
+				sum++;
+		}
 		degree[i] = sum;
 		if ( sum % 2 != 0 ) count0++;
 	}
@@ -196,6 +198,28 @@ This is an Euler Graph
 First point = 5
 
 Euler: 5 2 1 6 2 3 4 7 5 3 11 4 8 9 10 11 12 9 13 12 10 8 7 6 5
+*/
+
+/*
+Read adjacency matrix from a file:
+
+0 2 0 2 0 0 0 0 0 0
+2 0 1 1 0 0 0 0 0 0
+0 1 0 1 1 0 0 0 0 0
+2 1 1 0 2 0 0 0 0 0
+0 0 1 2 0 2 1 0 0 0
+0 0 0 0 2 0 0 2 0 0
+0 0 0 0 1 0 0 1 0 0
+0 0 0 0 0 2 1 0 1 2
+0 0 0 0 0 0 0 1 0 1
+0 0 0 0 0 0 0 2 1 0
+
+This is a Semi-Eulerian Graph
+First point = 1
+Please start from an odd-degree vertex.
+First point = 2
+
+Euler: 2 1 4 2 3 4 5 6 8 9 10 8 7 5 3
 */
 
 /*
