@@ -89,20 +89,25 @@ bool check() {
 }
 
 void Euler_Cycle(int node) {
-	stack<int> stack0, CE; // Tạo ngăn xếp và CE rỗng
-	stack0.push(node); // Đưa đỉnh đầu tiên vào ngăn xếp
-
+	stack<int> stack0, CE;
+	stack0.push(node);
 	while ( !stack0.empty() ) {
-		node = stack0.top(); // Lấy đỉnh đầu tiên trong ngăn xếp stack0
-		for ( int i = 1; i <= ver; i++ ) { // Quét các cột của hàng 'node' (quét các đỉnh kề với đỉnh node)
-			if ( adj_mat[node][i] ) { // Tìm được đỉnh kề gần nhất thì
-				stack0.push(i); // Thêm đỉnh đó vào ngăn xếp stack0
-				adj_mat[node][i] = adj_mat[i][node] = 0; // Xóa cạnh nối 2 đỉnh đó đi
-				break; // thoát vòng lặp ra ngoài để tiếp tục lấy đỉnh trong ngăn xếp stack0
-			} else if ( i == ver ) { // Nếu đã quết đến cuối => tức là Danh sách kề đã rỗng
-				CE.push(node); // Thì thêm đỉnh đó vào ngăn xếp CE
-				stack0.pop(); // Rồi xóa đỉnh đó khỏi ngăn xếp stack0
+		int counter = 0;
+		node = stack0.top();
+		for ( int i = 1; i <= ver; i++ )
+			if ( adj_mat[node][i] == 0 )
+				counter++;
+		if ( counter != ver ) {
+			for ( int t = 1; t <= ver; t++ ) {
+				if ( adj_mat[node][t] == 1 ) {
+					stack0.push(t);
+					adj_mat[node][t] = adj_mat[t][node] = 0;
+					break;
+				}
 			}
+		} else {
+			CE.push(node);
+			stack0.pop();
 		}
 	}
 
