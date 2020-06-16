@@ -11,7 +11,7 @@ bool visited[MAX];
 void read_adj_mat() {
 	ifstream FileIn;
 	FileIn.open("graph.dat", ios_base::in);
-	FileIn >> ver; 
+	FileIn >> ver;
 
 	for ( int i = 1; i <= ver; i++ ) {
 		for ( int j = 1; j <= ver; j++ )
@@ -63,3 +63,20 @@ int main() {
 	Hamilton(1);
 	if ( count0 == 0 ) cout << "\nCan not find Hamiltonian Cycle\n";
 }
+
+/*
+Read adjacency matrix from a file:
+
+0 1 0 1 0
+1 0 1 0 1
+0 1 0 1 1
+1 0 1 0 1
+0 1 1 1 0
+First point = 1
+
+Hamiltonian Circuits from 1:
+1 4 5 3 2 1
+1 4 3 5 2 1
+1 2 5 3 4 1
+1 2 3 5 4 1
+*/
