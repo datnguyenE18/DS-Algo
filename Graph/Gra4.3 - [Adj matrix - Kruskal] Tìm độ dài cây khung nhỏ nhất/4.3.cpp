@@ -34,22 +34,22 @@ void dis_ed_lst() {
 		cout << e.u << "-" << e.v << "		  " << e.w << endl;
 }
 
-// Tìm xem u thuộc cây nào
+// Tìm xem u thuộc cây có gốc nào
 int findParent(int u) {
-	if ( par[u] != u ) par[u] = findParent(par[u]);
-	return par[u];
+	if ( par[u] != u ) par[u] = findParent(par[u]); // Những đỉnh chỉ có mình nó hoặc nó là gốc của một cây nào đó thì gốc của đỉnh đó là chính nó
+	return par[u]; // Khi tìm thấy một đỉnh trong một cây mà gốc của đỉnh đó là chính nó thì tức nó là gốc của cây đó
 }
 
 // Hợp nhất 2 cây chứa u và v,
 // Trả về false nếu không thể hợp nhất
 bool join(int u, int v) {
-	int U = findParent(u);
-	int V = findParent(v);
-	if ( U == V ) return false;
-	if ( D[U] == D[V] ) D[U]++;
-	if ( D[U] < D[V] ) par[U] = V;
-	else par[V] = U;
-	return true;
+	int U = findParent(u); // Gốc của đỉnh u
+	int V = findParent(v); // Gốc của đỉnh v
+	if ( U == V ) return false; // Nếu u và v có chung gốc thì không thể hợp nhất (nối chúng) với nhau vì như vậy sẽ tạo ra chu trình
+	if ( D[U] == D[V] ) D[U]++; // Nếu độ dài 2 cây bằng nhau thì tăng độ dài 1 trong 2 cây lên, ở đây ta tăng độ dài của cây chứa u
+	if ( D[U] < D[V] ) par[U] = V; // Còn nếu từ đầu 1 trong 2 cây, cây nào nhỏ hơn thì đưa về cùng gốc với cây lớn hơn 
+	else par[V] = U; // Nếu không, sau bước tăng độ dài cây chứa u lên thì có D[U] > D[V] => đưa cây chứa v về cùng gốc với cây chứa u
+	return true; // Trả về true
 }
 
 bool cmp(const edge &a, const edge &b) {
@@ -61,8 +61,8 @@ void kruskal() {
 
 	// Khởi tạo cấu trúc Disjoint Set
 	for ( int i = 1; i <= ver; i++ ) {
-		par[i] = i;
-		D[i] = 0;
+		par[i] = i; // đầu tiên gốc của mỗi cây là chính nó (vì chỉ có một đỉnh)
+		D[i] = 0; // đầu tiên độ dài các cây = 0 (vì chỉ có 1 đỉnh)
 	}
 
 	// Lưu tổng trọng số các cạnh trong cây khung nhỏ nhất
