@@ -2,8 +2,7 @@
 using namespace std;
 #define MAX 1001
 
-int ver,
-	adj_mat[MAX][MAX];
+int ver, adj_mat[MAX][MAX];
 bool visited[MAX];
 
 void Reinit() {
@@ -59,6 +58,30 @@ int DFS(int node) {
 	return count0;
 }
 
+int BFS(int node) {
+	cout << "	BFS(" << node << ") = ";
+	queue<int> queue0;
+	queue0.push(node);
+	visited[node] = true;
+	int count0 = 1;
+
+	while ( !queue0.empty() ) {
+		node = queue0.front();
+		queue0.pop();
+		cout << node << " ";
+
+		for ( int i = 1; i <= ver; i++ ) {
+			if ( adj_mat[node][i] != 0 && visited[i] == false ) {
+				queue0.push(i);
+				visited[i] = true;
+				count0++;
+			}
+		}
+	}
+	cout << "\n";
+	return count0;
+}
+
 void Finding_Bridges() {
 	vector<vector<int>> res;
 	for ( int i = 1; i <= ver; i++ ) {
@@ -66,14 +89,14 @@ void Finding_Bridges() {
 			if ( adj_mat[i][j] == 1 ) {
 				cout << "Egde: (" << i << ", " << j << ") -- ";
 				adj_mat[i][j] = adj_mat[j][i] = 0;
-				if ( DFS(1) != ver ) {
+				if ( DFS(1) != ver ) { // BFS(1) != ver
 					vector<int> temp;
 					temp.push_back(i);
 					temp.push_back(j);
 					res.push_back(temp);
 				}
 				Reinit();
-				adj_mat[i][j] = 1; 
+				adj_mat[i][j] = 1;
 			}
 		}
 	}
