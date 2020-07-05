@@ -73,7 +73,7 @@ void kruskal() {
 		// Thử hợp nhất 2 cây chứa u và v
 		if ( join(e.u, e.v) ) {
 			// Hợp nhất thành công, ta thêm e và kết quả
-			cout << e.u << " - " << e.v << ":	" << e.w << endl;
+			cout << e.u << " - " << e.v << "	: " << e.w << endl;
 			MSTweight += e.w;
 		}
 	}
@@ -118,18 +118,18 @@ Edge            Weight
 11-12             8
 
 Minimum spanning tree of the graph:
-1 - 3:  1
-1 - 2:  2
-1 - 4:  3
-2 - 6:  5
-2 - 7:  5
-4 - 5:  5
-5 - 10: 6
-6 - 8:  6
-6 - 9:  6
-8 - 12: 7
-8 - 13: 7
-9 - 11: 7
+1 - 3   : 1
+1 - 2   : 2
+1 - 4   : 3
+2 - 6   : 5
+2 - 7   : 5
+4 - 5   : 5
+5 - 10  : 6
+6 - 8   : 6
+6 - 9   : 6
+8 - 12  : 7
+8 - 13  : 7
+9 - 11  : 7
 
 => MSTweight : 60
 */
