@@ -47,7 +47,7 @@ int minDist() {
 	int min = INT_MAX; // độ dài đường đi nhỏ nhất từ đỉnh đang xét tới đỉnh cố định (ban đầu tạm cho bằng số lớn nhất có thể, tương đương với ∞)
 	int index; // lưu đỉnh cần tìm
 
-	for ( int i = 1; i <= ver - 1; i++ ) // Quét qua 1 loạt các đỉnh trong đồ thị để tìm đỉnh tiếp theo có đường đi ngắn nhất tới Đỉnh cố định
+	for ( int i = 1; i <= ver; i++ ) // Quét qua 1 loạt các đỉnh trong đồ thị để tìm đỉnh tiếp theo có đường đi ngắn nhất tới Đỉnh cố định
 		if ( included[i] == false && d[i] < min ) { // Nếu đỉnh đó chưa có trong cây khung (included[i] == false), và đỉnh đó tồn tại đường đi tới đỉnh cố định (d[i] < min - tức là d[i] khác ∞)... 
 			min = d[i]; //... thì lưu giá trị đó tạm thời là độ dài đường đi nhỏ nhất...
 			index = i; //... và lưu đỉnh đó tạm thời là đỉnh có đường đi ngắn nhất tới Đỉnh cố định
@@ -110,19 +110,19 @@ The Starting Point: 2
 + Vertex 4 : (4:4)(0:0)(3:4)(2:0)(6:4)(7:0)
 + Vertex 3 : (4:4)(0:0)(3:4)(2:0)(6:4)(4:3)
 + Vertex 1 : (4:4)(0:0)(3:4)(2:0)(6:4)(4:3)
-+ Vertex 5 : (4:4)(0:0)(3:4)(2:0)(6:4)(4:3)
++ Vertex 6 : (4:4)(0:0)(3:4)(2:0)(5:6)(4:3)
 
 - pre[1]: 4
 - pre[2]: 0
 - pre[3]: 4
 - pre[4]: 2
-- pre[5]: 4
+- pre[5]: 6
 - pre[6]: 3
 
 The distance from 2 to 1 is     : 4
 The distance from 2 to 2 is     : 0
 The distance from 2 to 3 is     : 3
 The distance from 2 to 4 is     : 2
-The distance from 2 to 5 is     : 6
+The distance from 2 to 5 is     : 5
 The distance from 2 to 6 is     : 4
 */
