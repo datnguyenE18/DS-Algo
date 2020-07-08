@@ -7,7 +7,7 @@ int ver, // Số đỉnh của
 	MSTweight = 0, // Độ dài cây khung nhỏ nhất 
 	adj_mat[MAX][MAX], // Ma trận kề của đồ thị trọng số
 	node; // Đỉnh bắt đầu
-bool visited[MAX * MAX]; // Lưu những đỉnh đã ở trong tập cây khung chưa
+bool included[MAX * MAX]; // Lưu những đỉnh đã ở trong tập cây khung chưa
 
 void read_adj_mat() {
 	ifstream FileIn;
@@ -34,15 +34,15 @@ void dis_adj_mat() {
 }
 
 void prim(int start) {
-	memset(visited, false, sizeof(visited)); // ban đầu chưa có đỉnh nào trong tập cây khung
-	visited[start] = true; // Đỉnh đầu tiên trong tập cây khung
+	memset(included, false, sizeof(included)); // ban đầu chưa có đỉnh nào trong tập cây khung
+	included[start] = true; // Đỉnh đầu tiên trong tập cây khung
 	while ( edg < ver - 1 ) { // Nếu số cạnh đã duyệt = Số đỉnh - 1 thì dừng
-		int min = 999, // giá trị trọng số nhỏ nhất kề với đỉnh đang xét (bàn đầu bằng 999, tương đương với ∞)
+		int min = 999, // giá trị trọng số nhỏ nhất cạnh nối 2 đỉnh đang xét (ban đầu bằng 999, tương đương với ∞)
 			x = 0, y = 0; // để lưu cạnh (2 đỉnh) đã xử lý trong vòng for ra ngoài
 		for ( int i = 1; i <= ver; i++ ) { // Quét các đỉnh trên đồ thị
-			if ( visited[i] ) { // Xét các đỉnh đã ở trong tập cây khung  
+			if ( included[i] ) { // Xét các đỉnh đã ở trong tập cây khung  
 				for ( int j = 1; j <= ver; j++ ) // Kiểm tra các đỉnh xung quanh nó
-					if ( !visited[j] /*&& adj_mat[i][j]*/ ) { // Nếu đỉnh xung quanh đó chưa xét
+					if ( !included[j] /*&& adj_mat[i][j]*/ ) { // Nếu đỉnh xung quanh đó chưa xét
 						if ( adj_mat[i][j] < min ) { // thì xem đâu là đỉnh có cạnh nối với nó có trọng số nhỏ nhất 
 							min = adj_mat[i][j]; // Lưu tạm trọng số nhỏ hơn đó vao min
 
@@ -56,7 +56,7 @@ void prim(int start) {
 		// đến cuối cùng, sau vòng for ta có cạnh có trọng số nhỏ nhất:
 		MSTweight += adj_mat[x][y];
 		cout << x << " - " << y << "	: " << adj_mat[x][y] << endl;
-		visited[y] = true;
+		included[y] = true;
 		edg++;
 	}
 	cout << "\n=> MSTweight : " << MSTweight << endl;
