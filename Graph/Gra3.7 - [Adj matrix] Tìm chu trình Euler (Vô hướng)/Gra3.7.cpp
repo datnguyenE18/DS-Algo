@@ -99,7 +99,7 @@ void Euler_Cycle(int node) {
 				stack0.push(i); // Thêm đỉnh đó vào ngăn xếp stack0
 				adj_mat[node][i] = adj_mat[i][node] = 0; // Xóa cạnh nối 2 đỉnh đó đi
 				break; // thoát vòng lặp ra ngoài để tiếp tục lấy đỉnh trong ngăn xếp stack0
-			} else if ( i == ver ) { // Nếu đã quết đến cuối => tức là Danh sách kề đã rỗng
+			} else if ( i == ver ) { // Nếu đã quét đến cuối => tức là Danh sách kề đã rỗng
 				CE.push(node); // Thì thêm đỉnh đó vào ngăn xếp CE
 				stack0.pop(); // Rồi xóa đỉnh đó khỏi ngăn xếp stack0
 			}

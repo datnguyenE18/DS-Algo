@@ -7,7 +7,7 @@ int ver, // Số đỉnh của
 	MSTweight = 0, // Độ dài cây khung nhỏ nhất 
 	adj_mat[MAX][MAX], // Ma trận kề của đồ thị trọng số
 	node; // Đỉnh bắt đầu
-bool included[MAX * MAX]; // Lưu những đỉnh đã ở trong tập cây khung chưa
+bool included[MAX]; // Lưu những đỉnh đã ở trong tập cây khung chưa
 
 void read_adj_mat() {
 	ifstream FileIn;
@@ -42,7 +42,7 @@ void prim(int start) {
 		for ( int i = 1; i <= ver; i++ ) { // Quét các đỉnh trên đồ thị
 			if ( included[i] ) { // Xét các đỉnh đã ở trong tập cây khung  
 				for ( int j = 1; j <= ver; j++ ) // Kiểm tra các đỉnh xung quanh nó
-					if ( !included[j] /*&& adj_mat[i][j]*/ ) { // Nếu đỉnh xung quanh đó chưa xét
+					if ( !included[j] && adj_mat[i][j] ) { // Nếu đỉnh xung quanh đó chưa xét và kề với nó
 						if ( adj_mat[i][j] < min ) { // thì xem đâu là đỉnh có cạnh nối với nó có trọng số nhỏ nhất 
 							min = adj_mat[i][j]; // Lưu tạm trọng số nhỏ hơn đó vao min
 
