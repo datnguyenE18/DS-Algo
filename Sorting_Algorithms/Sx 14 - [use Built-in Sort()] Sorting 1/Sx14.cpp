@@ -1,4 +1,5 @@
-﻿#include<bits/stdc++.h>
+﻿// Sắp xếp + con trỏ
+#include<bits/stdc++.h>
 using namespace std;
 
 const int maxN = 1e3 + 1;
