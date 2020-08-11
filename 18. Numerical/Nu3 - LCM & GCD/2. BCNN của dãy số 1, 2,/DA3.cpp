@@ -2,24 +2,19 @@
 using namespace std;
 typedef long long int ll;
 
-//Tìm UCLN theo Euclid
-ll GCD ( ll a, ll b ) {
+ll GCD(ll a, ll b) {
 	if ( a == 0 ) return b;
-	return GCD ( b % a, a );
+	return GCD(b % a, a);
 }
 
-int main () {
-	ll n, test;
-	cin >> n;
-	while ( n-- ) {
-		cin >> test;
-		ll result = 1;
-		for ( ll i = 2; i <= test; i++ ) {
-			result = ( i * result ) / GCD ( i, result );
-		}
-		cout << result << endl;
+int main() {
+	ll n;
+	int t; cin >> t;
+	while ( t-- ) {
+		cin >> n;
+		ll LCM = 1;
+		for ( int i = 1; i <= n; i++ )
+			LCM = ( LCM * i ) / GCD(LCM, i);
+		cout << LCM << endl;
 	}
-
-	system ( "pause" );
-	return 0;
 }

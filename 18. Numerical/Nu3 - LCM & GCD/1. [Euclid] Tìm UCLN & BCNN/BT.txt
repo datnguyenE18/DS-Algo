@@ -1,16 +1,19 @@
 LCM & GCD 
 
-Cho hai số nguyên a, b. Nhiệm vụ của bạn là tìm LCM(a, b) và GCD(a,b).
+Cho hai số nguyên a, b. Nhiệm vụ của bạn là tìm BCNN và UCLN của a và b. (Bội số chung nhỏ nhất của a và b ký hiệu là LCM(a, b) và ước số chung lớn nhất của a và b ký hiệu là GCD(a, b))
+
 *Input:
 	+) Dòng đầu tiên đưa vào T là số lượng bộ test.
-	+) T dòng tiếp theo mỗi dòng đưa vào một bộ test. Mỗi bộ test là một cặp số a, b được 		viết cách nhau một vào khoảng trống.
-	+) T, a, b thỏa mãn ràng buộc: 1≤T≤100; 1≤a, b≤108;
+	+) T dòng tiếp theo mỗi dòng đưa vào một bộ test. Mỗi bộ test là một cặp số a, b được viết cách nhau một vào khoảng trống.
+	+) T, a, b thỏa mãn ràng buộc: 1 ≤ T ≤ 100; 1 ≤ a, b ≤ 10^8;
 *Output:
 	+) Đưa ra kết quả mỗi test theo từng dòng.
+
 
 Input 					Output
 2
 5 10					10 5
 14 8					56 2
 
-Euclid: Nếu b≠0 thì d = USCLN(a, b) = USCLN(b, a % b). Nếu b = 0 thì a là ước số chung lớn nhất của a và b
+Euclid: Nếu b≠0 thì d = UCLN(a, b) = UCLN(b, a % b). Nếu b = 0 thì a là ước số chung lớn nhất của a và b
+a x b = UCLN(a, b) x BCNN(a, b)

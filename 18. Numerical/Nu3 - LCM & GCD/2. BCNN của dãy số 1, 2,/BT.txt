@@ -5,7 +5,7 @@ Cho hai số tự nhiên n. Nhiệm vụ của bạn là tìm số nguyên nhỏ
 Input:
 	+) Dòng đầu tiên đưa vào T là số lượng bộ test.
 	+) T dòng tiếp theo mỗi dòng đưa vào một bộ test. Mỗi bộ test là một số tự nhiên n.
-	+) T thỏa mãn ràng buộc: 1≤T≤104;
+	+) T thỏa mãn ràng buộc: 1 ≤ T ≤ 10^4;
 Output:
 	+) Đưa ra kết quả mỗi test theo từng dòng.
 

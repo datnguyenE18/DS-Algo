@@ -4,10 +4,10 @@ Cho bốn số nguyên dương X, Y, Z và N. Hãy tìm số nguyên dương nh�
 
 Input:
 	+) Dòng đầu tiên đưa vào số lượng test T (T≤100).
-	+) Những dòng kế tiếp đưa vào T bộ test. Mỗi bộ test là bộ bốn số X, Y, Z, N. Các số X, Y, Z, N 	   	   thỏa mãn ràng buộc: 1≤ X, Y, Z ≤105; N≤18.
+	+) Những dòng kế tiếp đưa vào T bộ test. Mỗi bộ test là bộ bốn số X, Y, Z, N. Các số X, Y, Z, N thỏa mãn ràng buộc: 1≤ X, Y, Z ≤105; N≤18.
 
 Output:
-	+) Đưa ra theo từng dòng kết quả mỗi test là số nguyên nhỏ nhất có N chữ số chia hết đồng thời cho 	   X, Y, Z. Trong trường hợp không có số nguyên N chữ số thỏa mãn yêu cầu bài toán đưa ra giá trị 	   -1.
+	+) Đưa ra theo từng dòng kết quả mỗi test là số nguyên nhỏ nhất có N chữ số chia hết đồng thời cho X, Y, Z. Trong trường hợp không có số nguyên N chữ số thỏa mãn yêu cầu bài toán đưa ra giá trị 	   -1.
 
 Input 			Output
 3
