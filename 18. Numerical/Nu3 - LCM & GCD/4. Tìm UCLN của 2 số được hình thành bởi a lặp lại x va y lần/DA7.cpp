@@ -1,30 +1,25 @@
-﻿// GCD(a, x, y): x, y la so lan lap lai a
+﻿// GCD(a, x, y): x, y là số lần lặp lại a
 #include<bits/stdc++.h> 
-typedef long long int ll;
 using namespace std;
-// Return the Greatest common Divisor of two numbers. 
-ll gcd ( ll a, ll b ) {
-	if ( a == 0 )
-		return b;
-	return gcd ( b%a, a );
+typedef long long int ll;
+
+ll gcd(ll a, ll b) {
+	if ( a == 0 ) return b;
+	return gcd(b % a, a);
 }
-void findgcd ( ll a, ll x, ll y ) {
-	// tim GCD(x,y) 
-	ll g = gcd ( x, y );
-	// in a nlan. 
+
+void find_gcd(ll a, ll x, ll y) {
+	ll g = gcd(x, y);
 	for ( int i = 0; i < g; i++ )
 		cout << a;
 	cout << endl;
 }
 
-// Driven Program 
-int main () {
-	ll T, a, x, y; cin >> T;
-	while ( T-- ) {
+int main() {
+	ll a, x, y;
+	int t; cin >> t;
+	while ( t-- ) {
 		cin >> a >> x >> y;
-		findgcd ( a, x, y );
+		find_gcd(a, x, y);
 	}
-
-	system ( "pause" );
-	return 0;
 }

@@ -4,7 +4,7 @@ Cho bốn số nguyên dương X, Y, Z và N. Hãy tìm số nguyên dương nh�
 
 Input:
 	+) Dòng đầu tiên đưa vào số lượng test T (T≤100).
-	+) Những dòng kế tiếp đưa vào T bộ test. Mỗi bộ test là bộ bốn số X, Y, Z, N. Các số X, Y, Z, N thỏa mãn ràng buộc: 1≤ X, Y, Z ≤105; N≤18.
+	+) Những dòng kế tiếp đưa vào T bộ test. Mỗi bộ test là bộ bốn số X, Y, Z, N. Các số X, Y, Z, N thỏa mãn ràng buộc: 1 ≤ X, Y, Z ≤ 10^5; N ≤ 18.
 
 Output:
 	+) Đưa ra theo từng dòng kết quả mỗi test là số nguyên nhỏ nhất có N chữ số chia hết đồng thời cho X, Y, Z. Trong trường hợp không có số nguyên N chữ số thỏa mãn yêu cầu bài toán đưa ra giá trị 	   -1.
@@ -20,7 +20,7 @@ Gợi ý:
 1) Tìm số n chữ số nhỏ nhất là pow (10, n-1).
 2) Tìm LCM của 3 số x, y và z đã cho.
 3) Tìm phần còn lại của LCM khi chia cho pow (10, n-1).
-4) Thêm LCM của LCM - phần còn lại vào pow (10, n-1). Nếu bổ sung này vẫn là một số chữ số, chúng tôi trả về kết quả. Khác chúng tôi trở lại Không thể.
+4) Thêm LCM của LCM - phần còn lại vào pow (10, n-1). Nếu điều này vẫn là một số chữ số, chúng trả về kết quả. Khác trả về lại -1.
 
 Minh họa:
 Giả sử n = 4 và x, y, z lần lượt là 2, 3, 5.
