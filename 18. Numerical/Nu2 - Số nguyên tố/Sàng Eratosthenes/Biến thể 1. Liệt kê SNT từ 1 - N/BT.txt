@@ -4,9 +4,8 @@ Cho số nguyên dương N. Hãy đưa ra tất cả các số nguyên tố nh�
 
 Input:
 	+) Dòng đầu tiên đưa vào số lượng bộ test T.
-	+) Những dòng kế tiếp đưa vào T bộ test. Mỗi bộ test là một số nguyên dương N được ghi trên
-	   một dòng.
-	+) T, N thỏa mãn ràng buộc: 1≤T≤100; 2≤N≤104.
+	+) Những dòng kế tiếp đưa vào T bộ test. Mỗi bộ test là một số nguyên dương N được ghi trên một dòng.
+	+) T, N thỏa mãn ràng buộc: 1 ≤ T ≤ 100; 2 ≤ N ≤ 10^4.
 
 Output:
 	+) Đưa ra kết quả mỗi test theo từng dòng.

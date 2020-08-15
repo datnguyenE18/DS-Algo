@@ -2,32 +2,32 @@
 typedef long long int ll;
 using namespace std;
 
-void Solution(ll n) {
-	//Buoc 1: in ra uoc so 2 
+void solve(ll n) {
+	// B1: Kiểm tra và in ra ước số 2
 	while ( n % 2 == 0 ) {
 		cout << 2 << " ";
-		n = n / 2;
+		n /= 2;
 	}
 
-	//Buoc 2: dua ra cac uoc so le      
-	for ( ll i = 3; i <= sqrt(n); i = i + 2 ) {
-		// dua ra cac uoc so le
+	// B2: Kiểm tra các số lẻ và in ra các ước lẻ
+	for ( ll i = 3; i <= sqrt(n); i += 2 ) {
 		while ( n % i == 0 ) {
 			cout << i << " ";
-			n = n / i;
+			n /= i;
 		}
 	}
 
-	//Buoc 3: in ra so cuoi cung
-	if ( 2 < n )
-		cout << n << " " << endl;
+	// Cuối cùng số n còn lại sau khi chia dần bên trên nếu nó vẫn lớn hơn 2 thì nó chia hết cho chính nó
+	if ( n > 2 )
+		cout << n;
+	cout << endl;
 }
 
-int main(void) {
-	int T; cin >> T;
+int main() {
+	int t; cin >> t;
 	ll n;
-	while ( T-- ) {
+	while ( t-- ) {
 		cin >> n;
-		Solution(n);
+		solve(n);
 	}
 }
