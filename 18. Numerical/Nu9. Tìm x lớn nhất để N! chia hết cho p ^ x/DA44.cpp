@@ -2,7 +2,7 @@
 #include <bits/stdc++.h> 
 using namespace std;
 
-int largestPower ( int n, int p ) {
+int largestPower(int n, int p) {
 	int x = 0;
 	// tim  x = n/p + n/(p^2) + n/(p^3) + .... 
 	while ( n ) {
@@ -10,10 +10,10 @@ int largestPower ( int n, int p ) {
 		x += n;
 	} return x;
 }
-int main () {
+int main() {
 	int n, p, T; cin >> T;
 	while ( T-- ) {
 		cin >> n >> p;
-		cout << largestPower ( n, p ) << endl;
-	} system ( "pause" );
+		cout << largestPower(n, p) << endl;
+	}
 }

@@ -1,7 +1,7 @@
 ﻿#include<bits/stdc++.h>
 using namespace std;
 
-int Solving ( int n ) {
+int Solving(int n) {
 	int dem1 = 0, dem3 = 0;
 	if ( n < 30 ) return dem1;
 	else {
@@ -17,18 +17,18 @@ int Solving ( int n ) {
 				while ( n % i == 0 ) {
 					n /= i;
 					dem1++;
-				} 
+				}
 			}
-			if ( dem1 != 3 || dem3 != 3) return 0;
+			if ( dem1 != 3 || dem3 != 3 ) return 0;
 			else return 1;
 		}
 	}
 }
 
-int main () {
+int main() {
 	int n, T; cin >> T;
 	while ( T-- ) {
 		cin >> n;
-		cout << Solving ( n ) << endl;
-	} system ( "pause" );
+		cout << Solving(n) << endl;
+	} 
 }

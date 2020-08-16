@@ -1,31 +1,27 @@
 ﻿#include<iostream>
 using namespace std;
 
-void phan_tich_SNT ( int  N ) {
-	int dem;
+void phan_tich_SNT(int  N) {
+	int exp; // Số mũ
 	for ( int i = 2; i <= N; i++ ) {
-		dem = 0;
+		exp = 0;
 		while ( N % i == 0 ) {
-			dem++;
+			exp++;
 			N /= i;
 		}
-		if ( dem ) {
+		if ( exp ) {
 			cout << i;
-			if ( dem >= 1 ) cout << " " << dem;
+			if ( exp >= 1 ) cout << " " << exp;
 			if ( N > i ) cout << " ";
 		}
 	}
 	cout << endl;
 }
 
-int main ( ) {
-	int N;
-	int T; cin >> T;
+int main() {
+	int N, T; cin >> T;
 	while ( T-- ) {
 		cin >> N;
-		phan_tich_SNT ( N );
+		phan_tich_SNT(N);
 	}
-
-	system ( "pause" );
-	return 0;
 }
