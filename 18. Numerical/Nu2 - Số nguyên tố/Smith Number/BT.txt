@@ -7,7 +7,7 @@ Ví dụ N = 666 có các ước số nguyên tố là 2, 3, 3, 37 có tổng c�
 Input
 	+) Dòng đầu tiên đưa vào số lượng test T.
 	+) Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là một số nguyên N.
-	+) T, N thỏa mãn rang buộc 1≤T≤100; 1≤N≤100000.
+	+) T, N thỏa mãn rang buộc 1 ≤ T ≤ 100; 1 ≤ N ≤ 100000.
 
 Output
 	+) Đưa ra kết quả mỗi test theo từng dòng.

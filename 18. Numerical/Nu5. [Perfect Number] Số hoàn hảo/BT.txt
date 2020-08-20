@@ -5,7 +5,7 @@ Input
 
 	+) Những dòng kế tiếp đưa vào các bộ test.Mỗi bộ test là một số nguyên N. 
 
-	+) T, N thỏa mãn rang buộc 1≤T≤100; 1≤N≤1018
+	+) T, N thỏa mãn rang buộc 1≤T≤100; 1≤N≤10^18
 
 Output
 	+) Đưa ra kết quả mỗi test theo từng dòng.

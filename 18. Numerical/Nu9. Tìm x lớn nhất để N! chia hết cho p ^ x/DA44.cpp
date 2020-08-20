@@ -4,7 +4,7 @@ using namespace std;
 
 int largestPower(int n, int p) {
 	int x = 0;
-	// tim  x = n/p + n/(p^2) + n/(p^3) + .... 
+	// tim  x = n/p + n/(p^2) + n/(p^3) + ...
 	while ( n ) {
 		n /= p;
 		x += n;

@@ -1,0 +1,6 @@
+{1, 2, 3, 4, 5, 6} => {1, 2, 4, 5} có tổng = X, tập {3,6} có tổng bằng Y
+|X- Y| = m
+X+ Y = (1+2+…+ n) = n*(n+1)/2
+=> tìm X, Y?
+
+Check UCLN(X,Y) ==1? YES là đồng nguyên tố (nguyên tố cùng nhau)
