@@ -1,0 +1,3 @@
+C1: Làm bình thường theo đúng logic đề bài
+
+C2: Phương trình đồng dư có nghiệm <=> USCLN(a, m)=1
