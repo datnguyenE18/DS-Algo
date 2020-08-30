@@ -1,0 +1,18 @@
+Spoj: https://www.spoj.com/PTIT/problems/CPPMOD03/
+
+Cho hai số nguyên không âm N và K. Nhiệm vụ của bạn là tìm S = 1%K + 2%K + ..+ N%K. Ví dụ với N = 10, K=2 ta có S = 1%2 + 2%2+3%2 + 4%2+5%2+6%2+7%2+8%2+9%2+10%2 = 5. 
+Yêu cầu độ phức tạp thuật toán là hằng số
+
+Input:
+	Dòng đầu tiên đưa vào số lượng test T.
+	Những dòng kế tiếp mỗi dòng đưa vào một test. Mỗi test là bộ đôi N, K được viết cách nhau một vài khoảng trống.
+	T, N, K thỏa mãn ràng buộc : 1 ≤ T ≤ 100; 0 ≤ N ≤ 1000; 0 ≤ K ≤ 10^12.
+
+Output:
+	Đưa ra kết quả mỗi test theo từng dòng.
+
+Input:				Output:
+
+2
+10  55				55
+1   11				1
