@@ -3,19 +3,18 @@
 using namespace std;
 #define ll long long
 
-void solve(string a, ll b, ll M, ll newA) {
-	ll res = 1;
+void solve(string a, ll b, ll M) {
+	ll res = 1,
+		mod = 0;
 
-	for ( int i = 0; i < a.length(); i++ ) {
-		newA = newA * 10 + ( a[i] - 48 );
-		newA %= M;
-	}
+	for ( int i = 0; i < a.length(); i++ )
+		mod = ( mod * 10 + a[i] - '0' ) % M;
 
 	while ( b > 0 ) {
 		if ( b & 1 )						//Nếu b là số lẻ thì nhân a với res
-			res = ( res * newA ) % M;
+			res = ( res * mod ) % M;
 		b = b >> 1;							// b = b / 2
-		newA = ( newA * newA ) % M;
+		mod = ( mod * mod ) % M;
 	}
 	cout << res << endl;
 }
@@ -25,8 +24,8 @@ int main() {
 
 	while ( t-- ) {
 		string a;
-		ll b, M, newA = 0;
+		ll b, M;
 		cin >> a >> b >> M;
-		solve(a, b, M, newA);
+		solve(a, b, M);
 	}
 }
