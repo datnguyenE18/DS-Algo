@@ -1,0 +1,17 @@
+Spoj: https://www.spoj.com/PTIT/problems/CPPMOD09/
+
+Cho hai số n và r, hãy tìm C(n, r)% P. Trong đó P = 10^9 + 7.
+
+Input
+	Dòng đầu tiên đưa vào số lượng test T.  Những dòng kế tiếp đưa vào các bộ test. Mỗi test là bộ đôi n, r. Các số được viết cách nhau một vài khoảng trống.
+	T, n, r thỏa mãn ràng buộc : 1 ≤ T ≤ 100; 0 ≤ n ≤ 10^3 ; 1 ≤ r ≤ 800.
+
+Output
+	Đưa ra kết quả mỗi test theo từng dòng.
+
+
+Example
+Input			Output
+2 
+3 2 			3
+4 2			6
