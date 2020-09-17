@@ -19,7 +19,8 @@ void solve() {
 		l++;
 		r--;
 	}
-	if ( l == r ) cout << A[l] << endl;
+	if ( l == r ) cout << A[l];
+	cout << endl;
 }
 
 int main() {

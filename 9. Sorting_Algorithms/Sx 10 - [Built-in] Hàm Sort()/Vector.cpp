@@ -32,6 +32,4 @@ int main () {
 	ý mình thì phải tự viết hàm so sánh sau đó truyền vào cho con trỏ hàm của hàm std::sort().*/
 	sort ( arr.begin (), arr.end (), comp );
 	cout << "Giam dan: "; Xuat ( arr, n );
-
-	system ( "pause" );
 }
