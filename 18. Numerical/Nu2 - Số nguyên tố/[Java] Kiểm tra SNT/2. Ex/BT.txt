@@ -1,0 +1,19 @@
+Viết chương trình kiểm tra một số nguyên dương có phải số nguyên tố hay không. Dòng đầu của dữ liệu vào ghi số bộ test. Mỗi dòng tiếp theo có một nguyên dương không quá 9 chữ số. Kết quả in ra YES nếu đó là số nguyên tố, in ra NO nếu ngược lại.
+
+ 
+
+Input				Output
+
+3
+
+123456				NO
+
+997				YES
+
+111111111			NO	
+
+ 
+
+Giới hạn thời gian: 2s
+
+Giới hạn bộ nhớ: 65536 Kb
