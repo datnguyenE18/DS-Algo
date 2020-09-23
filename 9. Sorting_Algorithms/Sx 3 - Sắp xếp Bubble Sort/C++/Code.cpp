@@ -42,6 +42,4 @@ int main () {
 	cout << "Cac phan tu da nhap: "; Xuat ( a, n );
 	BubbleSort ( a, n );
 	cout << "Da sap xep: "; Xuat ( a, n );
-
-	system ( "pause" );
 }
