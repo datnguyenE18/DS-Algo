@@ -1,0 +1,40 @@
+Cho một bảng hình chữ nhật kích thước vô hạn. Ban đầu, tất cả các ô đều có giá trị bằng 0.
+
+Có N phép thực hiện, mỗi bước, bạn được phép tăng giá trị của hình chữ nhật con từ ô (1, 1) tới ô (a, b) lên 1 đơn vị.
+
+Sau N bước, số lớn nhất trong bảng là X. Nhiệm vụ của bạn là hãy đếm số lần xuất hiện của X?
+
+Input:
+	Dòng đầu tiên là số nguyên N (1 ≤ N ≤ 100).
+	N dòng tiếp theo, mỗi dòng gồm 2 số nguyên a và b mô tả một bước (1 ≤ a, b ≤ 10^6).
+
+Output: 
+	In ra số lần xuất hiện của số lớn nhất trong bảng.
+
+Ví dụ:
+
+Input:		Output:
+
+3		2
+
+2 3
+
+3 7
+
+4 1
+
+
+Giải thích test: Trạng thái cuối cùng của hình chữ nhật là:
+
+1 0 0 0 0 0 0
+
+2 1 1 1 1 1 1
+
+3 2 2 1 1 1 1
+
+3 2 2 1 1 1 1
+
+
+Giới hạn thời gian: 2s
+
+Giới hạn bộ nhớ: 65536 Kb
