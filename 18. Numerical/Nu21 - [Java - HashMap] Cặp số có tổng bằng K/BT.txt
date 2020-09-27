@@ -1,0 +1,39 @@
+Cho dãy số A[] gồm có N phần tử.
+
+Nhiệm vụ của bạn là đếm xem có bao nhiêu cặp (i, j) mà A[i] + A[j] = K cho trước.
+
+Input:
+	Dòng đầu tiên là số lượng bộ test T (T ≤ 10).
+	Mỗi test gồm số nguyên N và K (1≤ N ≤ 100 000, 0 ≤ K ≤ 10^9).
+	Dòng tiếp theo gồm N số nguyên A[i] (0 ≤ A[i] ≤ 10^9).
+
+Output: 
+	Với mỗi test, in ra trên một dòng là đáp án thu được.
+
+Ví dụ:
+
+Input:					Output
+
+4
+
+4 6					2
+
+1 5 7 -1
+
+5 6					3
+
+1 5 7 -1 5
+
+4 2					6
+
+1 1 1 1
+
+13 11					9
+
+10 12 10 15 -1 7 6 5 4 2 1 1 1
+
+----------------------------------------------------------------------------------- 
+
+Giới hạn thời gian: 2s
+
+Giới hạn bộ nhớ: 65536 Kb

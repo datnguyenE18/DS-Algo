@@ -1,0 +1,23 @@
+Hãy tính giá trị biểu thức (1^n + 2^n + 3^n + 4^n) mod 5
+
+Input:
+	Dòng đầu là số lượng bộ test T (T ≤ 100).
+	Mỗi test gồm một xâu biểu diễn số nguyên n, n có không quá 100 000 kí tự.
+
+Output: 
+	Với mỗi test in ra đáp án tìm được trên một dòng.
+
+Ví dụ:
+Input:			Output
+
+2
+
+4			4
+
+123456789		0
+
+--------------------------------------------------------------------------------------------- 
+
+Giới hạn thời gian: 2s
+
+Giới hạn bộ nhớ: 65536 Kb

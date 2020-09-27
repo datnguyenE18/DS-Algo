@@ -1,0 +1,29 @@
+Cho dãy số A[] gồm có N phần tử. Một bộ 3 số (a, b, c) được gọi là bộ ba số Pytago nếu như a^2 + b^2 = c^2.
+Nhiệm vụ của bạn là kiểm tra xem có tồn tại bộ ba số Pytago trong dãy số A[] hay không?
+
+Input:
+	Dòng đầu tiên là số lượng bộ test T (T ≤ 20).
+	Mỗi test gồm số nguyên N (1 ≤ N ≤ 5000).
+	Dòng tiếp theo gồm N số nguyên A[i] (1 ≤ A[i] ≤ 10^9).
+
+Output: 
+	Với mỗi test, in ra trên một dòng “YES” nếu tìm được, và “NO” trong trường hợp ngược lại.
+
+Ví dụ:
+Input:				Output
+
+2
+
+5				YES	
+
+3 1 4 6 5
+
+3				NO
+
+1 1 1
+
+------------------------------------------------------------------------------------------------------
+
+Giới hạn thời gian: 2s
+
+Giới hạn bộ nhớ: 65536 Kb
