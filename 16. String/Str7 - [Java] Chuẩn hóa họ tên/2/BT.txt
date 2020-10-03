@@ -1,0 +1,28 @@
+Theo quy tắc viết tên tiếng Anh, họ tên sẽ thường được viết lại theo dạng chuẩn trong đó phần họ được viết sau cùng, phân tách với phần tên đệm và tên bởi dấu phẩy. Các chữ cái của phần họ đều viết hoa.
+Cho trước các xâu họ tên (có thể không chuẩn). Hãy đưa về dạng chuẩn tương ứng.
+
+Dữ liệu vào:
+	Dòng 1 ghi số N là xâu họ tên trong danh sách
+	N dòng tiếp theo ghi lần lượt các xâu họ tên (không quá 50 ký tự)
+
+Kết quả: Ghi ra các xâu chuẩn.
+
+Ví dụ:
+
+Input						Output
+
+4
+
+    nGUYEn    quaNG   vInH  			Quang Vinh, NGUYEN
+	
+   tRan   thi THU    huOnG			Thi Thu Huong, TRAN
+
+   nGO   quoC  VINH				Quoc Vinh, NGO
+
+ lE            tuAn    aNH			Tuan Anh, LE
+
+ 
+
+Giới hạn thời gian: 2s
+
+Giới hạn bộ nhớ: 65536 Kb

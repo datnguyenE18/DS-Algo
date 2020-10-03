@@ -1,0 +1,25 @@
+Một số được coi là đẹp nếu đó là số thuận nghịch và chỉ toàn các chữ số nguyên tố. Viết chương trình đọc vào các số nguyên dương có không quá 500 chữ số và kiếm tra xem số đó có đẹp hay không.  
+
+Dữ liệu vào:
+	Dòng đầu tiên ghi số bộ test.
+	Mỗi bộ test viết trên một dòng số nguyên dương n không quá 500 chữ số. 
+
+Kết quả:
+	Mỗi bộ test viết ra trên một dòng chữ YES nếu đó là số đẹp, chữ NO nếu ngược lại
+
+Ví dụ                          
+
+Input							Output
+
+3
+
+123456787654321						NO
+
+235755557532						NO
+
+2222333355557777235775327777555533332222		YES
+ 
+
+Giới hạn thời gian: 2s
+
+Giới hạn bộ nhớ: 65536 Kb
