@@ -1,0 +1,5 @@
+Nhập vào chiều cao và in ra hình như dưới đây (ví dụ với chiều cao bằng 4): 
+      1
+    1 2 1
+  1 2 3 2 1
+1 2 3 4 3 2 1 

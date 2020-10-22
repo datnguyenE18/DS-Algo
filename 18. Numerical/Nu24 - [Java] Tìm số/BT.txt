@@ -1,0 +1,1 @@
+Viết chương trình nhập một số nguyên trong khoảng 10 .. 99. Sau đó lần lượt lấy ngẫu nhiên các số trong khoảng này cho đến khi có một giá trị đúng bằng giá trị nhập vào. In ra kết quả từng bước và số bước phải thực hiện. 

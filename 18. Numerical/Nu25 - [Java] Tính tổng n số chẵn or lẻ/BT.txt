@@ -1,0 +1,2 @@
+Viết chương trình tính tổng S = 1+3+5+ ...+ n nếu n lẻ
+S = 2 + 4 + ... + n nếu n chẵn
