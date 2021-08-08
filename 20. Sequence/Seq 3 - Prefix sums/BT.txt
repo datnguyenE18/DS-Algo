@@ -1,6 +1,6 @@
 Cho mảng a chứa các số nguyên
 
-Xây dựng mảng b là prefix sums (từ này không dịch ra tiếng Việt do hơi chuối) của mảng a cụ thể theo công thức:
+Xây dựng mảng b là prefix sums (từ này hơi khó dịch ra tiếng Việt) của mảng a cụ thể theo công thức:
 
   b[0]   = a[0]
   b[1]   = a[0] + a[1]
