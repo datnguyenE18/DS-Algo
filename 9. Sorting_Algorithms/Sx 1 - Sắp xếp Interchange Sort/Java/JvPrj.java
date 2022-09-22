@@ -3,7 +3,7 @@ package jvprj;
 import java.util.Scanner;
 
 public class JvPrj {
-    private static void sort(int arr[], int n) {
+    private static void interchange_Sort(int arr[], int n) {
         for (int st = 0; st < n - 1; st++) { // Không cần quét số cuối cùng nữa vì đăng trước đã được sắp xếp rồi
             for (int run = st + 1; run < n; run++) {
                 if (arr[st] > arr[run]) {
@@ -31,6 +31,6 @@ public class JvPrj {
             arr[i] = sc.nextInt();
 
         // Sắp xếp:
-        sort(arr, n);
+        interchange_Sort(arr, n);
     }
 }
