@@ -1,37 +1,46 @@
-package jvprj;
-
-import java.util.*;
+import java.util.Scanner;
 
 public class JvPrj {
 
-    public static void main( String[] args ) {
-        Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
-        int dem = 0;
-        int a[] = new int[n + 2];
-        for ( int i = 0; i < n; i++ ) {
-            a[i] = scanner.nextInt();
-        }
-        for ( int i = 0; i < n; i++ ) {
-            boolean is_sorted = true;
-            for ( int j = 1; j < n - i; j++ ) {
-                if ( a[j - 1] > a[j] ) {
-                    int tmp = a[j - 1];
-                    a[j - 1] = a[j];
-                    a[j] = tmp;
-                    is_sorted = false;
+    private static void bubble_Sort(int arr[], int n) {
+        int step = 1; // số bước
+
+        for (int i = n - 1; i > 0; i--) {
+            // Kiểm tra xem arr có thay đổi không:
+            boolean isChange = false;
+
+            // Nếu 2 số đối nghịch thì đổi chỗ
+            for (int j = 0; j < i; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    isChange = true;
+                    int tmp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = tmp;
                 }
             }
-            if ( is_sorted ) {
-                break;
-            }
 
-            System.out.print("Buoc " + ( i + 1 ) + ": ");
-            for ( int k = 0; k < n; k++ ) {
-                System.out.print(a[k] + " ");
+            // Nếu thay đổi thì in ra arr ở bước này:
+            if (isChange) {
+                System.out.print("Buoc " + step + ": ");
+                for (int j = 0; j < n; j++) {
+                    System.out.print(arr[j] + " ");
+                }
+                System.out.println();
+                step++;
             }
-            System.out.println();
-
         }
+    }
+
+    public static void main( String[] args ) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+
+        // Nhập các phần tử array:
+        for (int i = 0; i < n; i++)
+            arr[i] = sc.nextInt();
+
+        // Sắp xếp:
+        bubble_Sort(arr, n);
     }
 }
