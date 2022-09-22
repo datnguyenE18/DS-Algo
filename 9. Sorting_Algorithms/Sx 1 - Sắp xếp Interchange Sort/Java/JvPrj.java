@@ -3,27 +3,34 @@ package jvprj;
 import java.util.Scanner;
 
 public class JvPrj {
+    private static void sort(int arr[], int n) {
+        for (int st = 0; st < n - 1; st++) { // Không cần quét số cuối cùng nữa vì đăng trước đã được sắp xếp rồi
+            for (int run = st + 1; run < n; run++) {
+                if (arr[st] > arr[run]) {
+                    int temp = arr[st];
+                    arr[st] = arr[run];
+                    arr[run] = temp;
 
-    public static void main( String[] args ) {
-        Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
-        int a[] = new int[n + 2];
-        for ( int i = 1; i <= n; i++ ) {
-            a[i] = scanner.nextInt();
-        }
-        for ( int i = 1; i <= n - 1; i++ ) {
-            for ( int j = i + 1; j <= n; j++ ) {
-                if ( a[j] < a[i] ) {
-                    int tmp = a[i];
-                    a[i] = a[j];
-                    a[j] = tmp;
                 }
+
             }
-            System.out.print("Buoc " + i + ": ");
-            for ( int k = 1; k <= n; k++ ) {
-                System.out.print(a[k] + " ");
-            }
+            System.out.print("Buoc " + (st + 1) + ": ");
+            for (int i = 0; i < n; i++)
+                System.out.print(arr[i] + " ");
             System.out.println();
         }
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt(),
+                arr[] = new int[n];
+
+        // Nhập các phần tử array:
+        for (int i = 0; i < n; i++)
+            arr[i] = sc.nextInt();
+
+        // Sắp xếp:
+        sort(arr, n);
     }
 }
