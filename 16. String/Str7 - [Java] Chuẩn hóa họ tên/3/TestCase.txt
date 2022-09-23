@@ -1,0 +1,18 @@
++ Input:
+
+2
+
+1
+
+NguyeN    vAn    Nam
+
+2
+
+hoAng  le Nhat THONG chi
+
+
++ Output:
+
+Nam Nguyen Van
+
+Le Nhat Thong Chi Hoang

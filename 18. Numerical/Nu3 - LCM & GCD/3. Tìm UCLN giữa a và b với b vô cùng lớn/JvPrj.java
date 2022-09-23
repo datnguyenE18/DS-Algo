@@ -1,5 +1,3 @@
-package jvprj;
-
 import java.util.*;
 
 public class JvPrj {
