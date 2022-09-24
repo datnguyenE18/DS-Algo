@@ -3,22 +3,20 @@ import java.util.Scanner;
 
 public class App {
 
-    public static void checkDiv(BigInteger a, BigInteger b) {
+    private static void checkDiv(BigInteger a, BigInteger b) {
         if (a.compareTo(b) > 0) { // Nếu a > b
-            BigInteger div = a.divide(b);
-            BigInteger again = div.multiply(b);
-            if (a.compareTo(again) > 0) {
-                System.out.println("NO");
-            } else {
+            BigInteger tmp = a.divide(b); // Thì lấy a / b
+            if (a.compareTo(b.multiply(tmp)) == 0) {
                 System.out.println("YES");
+            } else {
+                System.out.println("NO");
             }
-        } else { // nếu a <= b
-            BigInteger div = b.divide(a);
-            BigInteger again = div.multiply(a);
-            if (b.compareTo(again) > 0) {
-                System.out.println("NO");
-            } else {
+        } else { // Nếu a <= b
+            BigInteger tmp = b.divide(a);
+            if (b.compareTo(a.multiply(tmp)) == 0) {
                 System.out.println("YES");
+            } else {
+                System.out.println("NO");
             }
         }
     }
@@ -30,6 +28,7 @@ public class App {
         while (t-- > 0) {
             BigInteger a = sc.nextBigInteger();
             BigInteger b = sc.nextBigInteger();
+
             checkDiv(a, b);
         }
     }
