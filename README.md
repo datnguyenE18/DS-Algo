@@ -18,6 +18,6 @@ Blog Hùng Lê: https://giaithuatlaptrinh.github.io/
 
 • [Giải thuật và lập trình - thầy Lê Minh Hoàng](https://drive.google.com/file/d/1bzYOT09yRXISFOHO01fFNIzWHI5VNr2J/view) 
 
-• [(VNese) Introduction to Algorithms](https://drive.google.com/file/d/1FXpULLROM3dYOBTCKqLiJ6pA4vhifkS7/view) 
+• (VNese) Introduction to Algorithms
 
-• [Tài liệu chuyên tin](https://drive.google.com/file/d/1w6_ESlscjUWyeRw9pmjZxfND6qqIa6DI/view)
+• Tài liệu chuyên tin
