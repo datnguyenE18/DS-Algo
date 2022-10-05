@@ -1,8 +1,4 @@
-﻿/*
-**Next_binary_strings
-*/
-
-#include<bits/stdc++.h>
+﻿#include<bits/stdc++.h>
 using namespace std;
 
 void nextBit(string bit) {
