@@ -1,0 +1,1 @@
+Giống như Code số nguyên thủy, chỉ cần thay 4 , 5 thành 6 , 8
