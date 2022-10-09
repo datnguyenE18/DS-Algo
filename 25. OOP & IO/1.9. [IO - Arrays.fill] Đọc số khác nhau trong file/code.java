@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) throws ParseException, IOException {
         Scanner sc = new Scanner(new File("DATA.in"));
         int[] lst = new int[100001];
-        Arrays.fill(lst, 0);
+        Arrays.fill(lst, 0); // set tất cả values trong lst thành 0
 
         while (sc.hasNext()) {
             int tmp = sc.nextInt();
