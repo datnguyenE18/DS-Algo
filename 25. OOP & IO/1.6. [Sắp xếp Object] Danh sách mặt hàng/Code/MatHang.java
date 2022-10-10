@@ -25,17 +25,4 @@ public class MatHang implements Comparator<MatHang> {
     public String toString() {
         return code + " " + name + " " + dv + " " + buy + " " + sell + " " + profit;
     }
-
-    @Override
-    public int compare(MatHang o1, MatHang o2) {
-        int age1 = o1.getProfit();
-        int age2 = o2.getProfit();
-        if (age1 > age2) {
-            return -1;
-        } else if (age1 == age2) {
-            return 0;
-        } else {
-            return 1;
-        }
-    }
 }
