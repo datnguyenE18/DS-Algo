@@ -1,0 +1,19 @@
+Input:
+3
+01T
+Nguyen Van An
+09:00
+10:30
+06T
+Hoang Van Nam
+15:30
+18:00
+02I
+Tran Hoa Binh
+09:05
+10:00
+
+Output:
+06T  Hoang Van Nam 2 gio 30 phut
+01T  Nguyen Van An 1 gio 30 phut
+02I  Tran Hoa Binh 0 gio 55 phut
